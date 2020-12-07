@@ -1,3 +1,4 @@
+// variablerne indeholder: måneder, år, hvad 
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var startYear = 2010;
 var endYear = 2021;
@@ -7,6 +8,7 @@ var selectedDays = new Array();
 var mousedown = false;
 var mousemove = false;
 
+// funktion dropdown
 function loadCalendarMonths() {
     for (var i = 0; i < months.length; i++) {
         var doc = document.createElement("div");
