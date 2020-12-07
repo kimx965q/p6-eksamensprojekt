@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="slider.css">
+    <script src="slider.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+      <section>
+            <!-- START på slider kode-->
+            <div class="slideshow-container">
+              
+                <!-- Billeder med billednummer og caption tekst, alle med width 100% -->
+                <div class="mySlides">
+                    <img class="foto" src="img/quakka-1.jpg" alt="quakka 1">
+                    <div class="text_container">
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus ad, enim tempora architecto atque id ratione animi</div>
+                  </div>
+                  </div>
+            
+                <div class="mySlides">
+                    <img class="foto" src="img/quakka-2.jpg" alt="quakka 2">
+                    <div class="text_container">
+                      <div class="text">Tekst 2</div>
+                  </div>
+                  </div>
+            
+                <div class="mySlides">
+                    <img class="foto" src="img/quakka-3.jpg" alt="quakka 3">
+                    <div class="text_container">
+                      <div class="text">Tekst 3</div>
+                  </div>
+                </div>
+
+                <!-- Næste og forrige knapper -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                <div class="dot-container">
+                    <!-- Prikkerne under slideshowet, der indikerer hvilket billede i rækken, du er på-->
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <!-- SLUT på slider kode -->
+            
+      </section>
+
+      <footer>
+       
+      </footer>
+    </main>
+  </body>
+</html>

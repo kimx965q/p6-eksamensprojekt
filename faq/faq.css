@@ -1,0 +1,44 @@
+/* credit w3schools */
+
+* { /* Gælder for alle CSS-elementer i dette dokument*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.faq_container {
+    width: 1000px;
+}
+
+/* Style på knapperne, der åbner accordion */
+.question {
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    background-color: grey;
+    color: darkgreen;
+    transition: 0.4s;
+}
+
+.question:hover {
+    background-color: olivedrab;
+}
+
+.active {
+    background-color: darkgray;
+}
+
+/* Style til svar. Skjul svarene som standard. */
+.answer {
+    padding: 20px 40px;
+    background-color: lightgray;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
