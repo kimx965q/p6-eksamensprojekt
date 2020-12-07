@@ -6,7 +6,6 @@ let i;
 // START FAQ accordion kode
 
 for (i = 0; i < q.length; i++) {
-  console.log(q.length);
     q[i].addEventListener("click", function() {
       /* Skifter mellem at tilføje eller fjerne "active" class, 
       for at skifte farve på den knap, der kontrollerer, om man kan se svaret */
