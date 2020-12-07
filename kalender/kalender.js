@@ -3,6 +3,9 @@ var startYear = 2000;
 var endYear = 2020;
 var month = 0;
 var year = 0;
+var selectedDays = new Array();
+var mousedown = false;
+var mousemove = false;
 
 function loadCalendarMonths() {
     for (var i = 0; i < months.length; i++) {
@@ -63,9 +66,40 @@ function loadCalendarDays() {
     for (var i = 0; i < num; i++) {
         var tmp = i + 1;
         var d = document.createElement("div");
-        d.id = "calendarday_" + i;
+        d.id = "calendarday_" + tmp;
         d.className = "day";
         d.innerHTML = tmp;
+        d.dataset.day = tmp;
+
+        d.addEventListener('click', function () {
+            this.classList.toggle('selected');
+
+            if (!selectedDays.includes(this.dataset.day))
+                selectedDays.push(this.dataset.day);
+
+            else
+                selectedDays.splice(selectedDays.indexOf(this.dataset.day), 1);
+        });
+
+        d.addEventListener('mousemove', function (e) {
+            e.preventDefault();
+            if (mousedown) {
+                this.classList.add('selected');
+
+                if (!selectedDays.includes(this.dataset.day))
+                    selectedDays.push(this.dataset.day);
+            }
+        });
+
+        d.addEventListener('mousedown', function (e) {
+            e.preventDefault();
+            mousedown = true;
+        });
+
+        d.addEventListener('mouseup', function (e) {
+            e.preventDefault();
+            mousedown = false;
+        });
 
         document.getElementById("calendarDays").appendChild(d);
     }

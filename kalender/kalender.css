@@ -2,6 +2,7 @@ body, *{
     padding:0px;
     margin:0px;
     box-sizing: border-box;
+    font-family: Helvetica;
 }
 .calendar
 {
@@ -15,7 +16,7 @@ body, *{
     display: none;
     position: absolute;
     background-color: #fff;
-    color: #1caff6;
+    color: #90AFD5;
     text-align: center;
     font-size: 14pt;
     padding-top: 5px;
@@ -53,7 +54,7 @@ body, *{
 .calendar .calendar-btn
 {
     float: left;
-    background-color: #24aeff;
+    background-color: #0F204B;
     color: white;
     text-align: center;
     font-size: 14pt;
@@ -66,7 +67,7 @@ body, *{
 }
 
 .calendar .calendar-btn:hover{
-    background-color:#1f71a1;
+    background-color:#90AFD5;
 }
 
 .calendar .year-btn
@@ -82,7 +83,6 @@ body, *{
     padding: 1%;
     font-size:13pt;
     text-align:center;
-    border-radius: 10px;
     border: solid 1px #ddd;
 }
 
