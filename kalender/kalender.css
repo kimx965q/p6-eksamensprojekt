@@ -16,9 +16,10 @@ body, *{
     display: none;
     position: absolute;
     background-color: #fff;
-    color: #90AFD5;
-    text-align: center;
+    color: #0F204B;
+    text-align: left;
     font-size: 14pt;
+    
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 30px;
@@ -54,7 +55,7 @@ body, *{
 .calendar .calendar-btn
 {
     float: left;
-    background-color: #0F204B;
+    background-color: #90AFD5;
     color: white;
     text-align: center;
     font-size: 14pt;
@@ -67,7 +68,7 @@ body, *{
 }
 
 .calendar .calendar-btn:hover{
-    background-color:#90AFD5;
+    background-color:#0F204B;
 }
 
 .calendar .year-btn
@@ -94,7 +95,7 @@ body, *{
 
 .calendar .calendar-dates .days .day.selected
 {
-    background-color: #1caff6;
+    background-color: #90AFD5;
     color: white;
     cursor:pointer;
     opacity: .5;
