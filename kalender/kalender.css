@@ -14,12 +14,12 @@ body, *{
 .calendar .dropdown
 {
     display: none;
+    margin-top: 5px;
     position: absolute;
     background-color: #fff;
     color: #0F204B;
     text-align: left;
     font-size: 14pt;
-    
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 30px;
