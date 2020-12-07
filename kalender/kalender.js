@@ -61,6 +61,7 @@ function loadCalendarDays() {
     var num = daysInMonth(month, year);
     var dayofweek = tmpDate.getDay(); // start kalenderdag
 
+    // opret kalenderdagen
     for (var i = 0; i <= dayofweek; i++) {
         var d = document.createElement("div");
         d.classList.add("day");
@@ -68,6 +69,7 @@ function loadCalendarDays() {
         document.getElementById("calendarDays").appendChild(d);
     }
 
+    // gengive resten af ​​dagene
     for (var i = 0; i < num; i++) {
         var tmp = i + 1;
         var d = document.createElement("div");
