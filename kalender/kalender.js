@@ -1,4 +1,3 @@
-// Credit to Walter Guevara
 // variablerne indeholder: måneder, år, hvad 
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var startYear = 2010;
@@ -78,7 +77,7 @@ function loadCalendarDays() {
         d.innerHTML = tmp;
         d.dataset.day = tmp;
 
-        // klik af event start //
+        // klik af event start
         d.addEventListener('click', function () {
             this.classList.toggle('selected');
 
@@ -94,7 +93,7 @@ function loadCalendarDays() {
             dosomething();
         });
 
-        // event slut //
+        // event slut
         d.addEventListener('mousemove', function (e) {
             e.preventDefault();
             if (mousedown) {
@@ -138,3 +137,5 @@ window.addEventListener('load', function () {
     loadCalendarYears();
     loadCalendarDays();
 });
+
+// Credit til Walter Guevara
