@@ -1,3 +1,4 @@
+// Credit to Walter Guevara
 // variablerne indeholder: måneder, år, hvad 
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var startYear = 2010;
@@ -8,7 +9,7 @@ var selectedDays = new Array();
 var mousedown = false;
 var mousemove = false;
 
-// funktion dropdown
+// funktion: måneder
 function loadCalendarMonths() {
     for (var i = 0; i < months.length; i++) {
         var doc = document.createElement("div");
@@ -29,6 +30,7 @@ function loadCalendarMonths() {
     }
 }
 
+// funktion: år
 function loadCalendarYears() {
     document.getElementById("years").innerHTML = "";
 
@@ -51,12 +53,13 @@ function loadCalendarYears() {
     }
 }
 
+// funktion: dage
 function loadCalendarDays() {
     document.getElementById("calendarDays").innerHTML = "";
 
     var tmpDate = new Date(year, month, 0);
     var num = daysInMonth(month, year);
-    var dayofweek = tmpDate.getDay();       // find where to start calendar day of week
+    var dayofweek = tmpDate.getDay(); // start kalenderdag
 
     for (var i = 0; i <= dayofweek; i++) {
         var d = document.createElement("div");
