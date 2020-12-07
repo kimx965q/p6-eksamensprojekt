@@ -78,6 +78,7 @@ function loadCalendarDays() {
         d.innerHTML = tmp;
         d.dataset.day = tmp;
 
+        // klik af event start //
         d.addEventListener('click', function () {
             this.classList.toggle('selected');
 
@@ -86,8 +87,14 @@ function loadCalendarDays() {
 
             else
                 selectedDays.splice(selectedDays.indexOf(this.dataset.day), 1);
+
+            function dosomething() {
+                alert("Juleaften på Stoppestedet");
+            }
+            dosomething();
         });
 
+        // event slut //
         d.addEventListener('mousemove', function (e) {
             e.preventDefault();
             if (mousedown) {
