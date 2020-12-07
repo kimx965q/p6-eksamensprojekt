@@ -1,0 +1,126 @@
+/* credit w3schools */
+
+* { /* Gælder for alle CSS-elementer i dette dokument*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    width: 900px; /* Midlertidig container settings forud for hjemmesidens CSS */
+    text-align: center; /* Midlertidig container settings forud for hjemmesidens CSS */
+}
+
+
+/* Skjul billederne som standard */
+.mySlides {
+    display: none;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ddd;
+}
+
+/* Fotos har altid samme højde, så det kun er bredden, 
+der varierer på billederne, når man bladrer */
+.foto {
+    width: auto;
+    height: 400px;
+}
+
+.text_container { /* Conatiner for konstant afstand mellem billede og dots */
+    height: 80px; /* Plads til to linjer tekst. */
+}
+
+/* Tekst til billed-captions */
+.text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 18px 150px;
+    width: auto;
+}
+
+
+
+/* Næste og forrige knapper */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 240px;
+    width: auto;
+    color: #dd114e;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.2s ease;
+    user-select: none;
+    padding: 0 10px;
+}
+
+ /* specifik styling til næste knapperne*/
+.prev {
+    left: 0; /* placerer den helt i venstre side af skærmen som standard */
+}
+
+.next {
+    right: 0; /* placerer den helt til højre af skærmen som standard */
+}
+
+/* Ved hover, tilføj en lidt gennemsigtig sort baggrundsfarve */
+.prev:hover, .next:hover {
+    color: #BCCFDA;
+}
+
+
+
+.dot-container {
+    background-color: #ddd;
+    padding-bottom: 10px;
+}
+
+/* Styling af de prikker, der viser, hvilket billede, du er på */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #698684;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.active {
+    background-color: #374a48;
+}
+
+.dot:hover {
+    background-color: #BCCFDA;
+}
+
+
+/* Responsiveness for slider kode  */
+
+@media screen and (max-width: 1200px) {
+    .prev, .next {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .prev, .next {
+        font-size: 35px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .prev, .next {
+        padding: 5px;
+    }
+}
