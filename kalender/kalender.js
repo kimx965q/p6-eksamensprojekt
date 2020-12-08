@@ -8,7 +8,7 @@ var selectedDays = new Array();
 var mousedown = false;
 var mousemove = false;
 
-// funktion dropdown
+// funktion: måneder
 function loadCalendarMonths() {
     for (var i = 0; i < months.length; i++) {
         var doc = document.createElement("div");
@@ -29,6 +29,7 @@ function loadCalendarMonths() {
     }
 }
 
+// funktion: år
 function loadCalendarYears() {
     document.getElementById("years").innerHTML = "";
 
@@ -51,13 +52,15 @@ function loadCalendarYears() {
     }
 }
 
+// funktion: dage
 function loadCalendarDays() {
     document.getElementById("calendarDays").innerHTML = "";
 
     var tmpDate = new Date(year, month, 0);
     var num = daysInMonth(month, year);
-    var dayofweek = tmpDate.getDay();       // find where to start calendar day of week
+    var dayofweek = tmpDate.getDay(); // start kalenderdag
 
+    // opret kalenderdagen
     for (var i = 0; i <= dayofweek; i++) {
         var d = document.createElement("div");
         d.classList.add("day");
@@ -65,6 +68,7 @@ function loadCalendarDays() {
         document.getElementById("calendarDays").appendChild(d);
     }
 
+    // gengive resten af ​​dagene
     for (var i = 0; i < num; i++) {
         var tmp = i + 1;
         var d = document.createElement("div");
@@ -73,6 +77,7 @@ function loadCalendarDays() {
         d.innerHTML = tmp;
         d.dataset.day = tmp;
 
+        // klik af event start
         d.addEventListener('click', function () {
             this.classList.toggle('selected');
 
@@ -81,8 +86,14 @@ function loadCalendarDays() {
 
             else
                 selectedDays.splice(selectedDays.indexOf(this.dataset.day), 1);
+
+            function dosomething() {
+                alert("Juleaften på Stoppestedet");
+            }
+            dosomething();
         });
 
+        // event slut
         d.addEventListener('mousemove', function (e) {
             e.preventDefault();
             if (mousedown) {
@@ -126,3 +137,5 @@ window.addEventListener('load', function () {
     loadCalendarYears();
     loadCalendarDays();
 });
+
+// Credit til Walter Guevara
