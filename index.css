@@ -13,8 +13,7 @@ body{
 }
 
 main{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 100px;
 }
 
 /*nav*/
@@ -26,25 +25,30 @@ header{
 
 nav{
     position: fixed;
+    display: flex;
     height: 170px;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     min-height: 20vh;
     background: #fff;
     box-shadow:  0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
+.nav-content{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-nav img{
-    width: 18%;
-    display: block;
-    margin-top: 1rem;
-    margin-left: -220px;
-    
+
+nav img {
+    width: 22%;
+    margin-top: 10px;
+    display: block;   
 }
 
 .nav-top{
@@ -74,7 +78,6 @@ nav img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: -220px;
 }
 
 .nav-links li{
@@ -132,7 +135,6 @@ a{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    margin-top: 100px;
     
 }
 
@@ -144,19 +146,24 @@ a{
 
 .citat1 p{
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 65%;
 }
 
 .citat1 .images{
     margin-top: 30px;  
 }
 
-.images img {
-    width: 31%;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 350px;
+.images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
+.images img {
+    width: 32%;
+}
 
 
 
@@ -165,12 +172,11 @@ a{
 footer{
     background: #90AFD5;
     height: 300px;
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 footer p{
     line-height: 1.5rem;
@@ -180,10 +186,10 @@ footer p{
     margin-top: 30px;
     display: flex;
     color: white;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
 } 
 
 

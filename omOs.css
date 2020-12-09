@@ -13,8 +13,7 @@ height: 100%;
 }
 
 main{
-margin-left: 100px;
-margin-right: 100px;
+margin: 100px;
 }
 
 /*nav*/
@@ -28,6 +27,7 @@ header{
 
 nav{
     position: fixed;
+    display: flex;
     height: 170px;
     top: 0;
     left: 0;
@@ -48,10 +48,9 @@ nav{
 
 
 nav img{
-    width: 18%;
-    display: block;
-    margin-top: 1rem;
-    
+    width: 22%;
+    margin-top: 10px;
+    display: block;   
     
 }
 
