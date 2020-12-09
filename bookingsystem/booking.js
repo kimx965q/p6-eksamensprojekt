@@ -1,6 +1,6 @@
 //Credit to sakaos//
 window.onload = () => {
-    this.sessionStorage.setItem("usernam", "mia_username");
+    this.sessionStorage.setItem("username", "mia_username");
     this.sessionStorage.setItem("password", "mia_password");
 }
 
