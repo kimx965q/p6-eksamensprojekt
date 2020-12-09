@@ -20,14 +20,15 @@ main{
 /*nav*/
 
 header{
-    margin-right: 100px;
-    margin-left: 100px;
     height: 170px;
+    background: #fff;
+    box-shadow:  0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 
 nav{
     position: fixed;
+    height: 170px;
     top: 0;
     left: 0;
     width: 100%;
@@ -35,8 +36,6 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 20vh;
-    background: white;
-    box-shadow:  0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 
@@ -50,20 +49,21 @@ nav img{
 
 .nav-top{
     display: flex;
+    justify-content: flex-end;
     margin-top: 20px;
 }
 
 
 .nav-buttom{
     display: flex;
+    justify-content: flex-end;
     margin-top: 25px;
-    margin-left: 20px;
     width: 100%;
    
     
 }
 .nav-buttom a{
-    margin-left: 63px;
+    margin-left: 30px;
 }
 
 .nav-buttom a:hover{
@@ -113,7 +113,6 @@ a{
     border: 2px solid #90AFD5;
     padding-left: 11px;
     padding-right: 11px;
-    margin-right: 2px;
 }
 
 
