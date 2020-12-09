@@ -22,8 +22,7 @@ margin-right: 100px;
 
 header{
     height: 170px;
-    background: #fff;
-    box-shadow:  0 5px 8px 0 rgba(0, 0, 0, 0.1);
+    
 }
 
 
@@ -33,10 +32,18 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     min-height: 20vh;
+    background: #fff;
+    box-shadow:  0 5px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-content{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -44,7 +51,7 @@ nav img{
     width: 18%;
     display: block;
     margin-top: 1rem;
-    margin-left: -220px;
+    
     
 }
 
@@ -75,7 +82,7 @@ nav img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: -220px;
+    
 }
 
 .nav-links li{
@@ -143,7 +150,7 @@ a{
 .txt-and-img{
     display: flex;
     justify-content: space-between;
-
+    width: 100%;
 }
 .txt-box{
     width: 785px;
@@ -299,7 +306,7 @@ transition: all 0.3s ease;
 
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1200px){
 .nav-links{
     width: 60%;
 }
