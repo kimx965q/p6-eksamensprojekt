@@ -138,7 +138,6 @@ a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 250px;
     
 }
 
@@ -180,8 +179,6 @@ a{
 .row1{
     display: flex;
     margin-top: 30px;
-    margin-left: 60px;
-    margin-right: 60px;
     justify-content: space-between;
 
 }
@@ -219,10 +216,7 @@ a{
  .row2{
     display: flex;
     margin-top: 30px;
-    margin-left: 60px;
-    margin-right: 60px;
     justify-content: space-between;
-    margin-bottom: 350px;
 }
 
 .row2 img{
@@ -266,27 +260,26 @@ a{
 /*Footer*/
 
 footer{
-background: #90AFD5;
-height: 300px;
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-display: flex;
-justify-content: space-around;
+    background: #90AFD5;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 footer p{
-line-height: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .footer-content{
-margin-top: 30px;
-display: flex;
-color: white;
-justify-content: space-around;
-width: 100%;
-margin-left: 200px;
-margin-right: 200px;
+    margin-top: 30px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
 } 
 
 
