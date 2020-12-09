@@ -22,15 +22,17 @@ main{
 header{
     margin-right: 100px;
     margin-left: 100px;
-    height: 250px;
+    height: 170px;
 }
+
+
 nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     min-height: 20vh;
     background: white;
@@ -42,13 +44,12 @@ nav img{
     width: 18%;
     display: block;
     margin-top: 1rem;
-    margin-left: 100px;
+    
 }
 
 .nav-top{
     display: flex;
     margin-top: 20px;
-    margin-left: -5%;
 }
 
 .nav-top a{
@@ -58,13 +59,13 @@ nav img{
 .nav-buttom{
     display: flex;
     margin-top: 25px;
-    margin-right: 100px;
+
     width: 100%;
    
     
 }
 .nav-buttom a{
-    margin-left: 55px;
+    margin-left: 63px;
 }
 
 .nav-buttom a:hover{
@@ -74,9 +75,8 @@ nav img{
 .nav-links{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 20%;
-    margin-right: 100px;
+    justify-content: space-between;
+    
 }
 
 .nav-links li{
@@ -97,10 +97,13 @@ a{
 
 .nav-btn1{
     background: #90AFD5;
-    padding: 10px 30px;
-    
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
 }
+
 
 .nav-btn1:hover{
     background:#020D59;
@@ -109,7 +112,9 @@ a{
 
 .nav-btn2{
     border: 2px solid #90AFD5;
-    padding-left: 7%;
+    padding-left: 11px;
+    padding-right: 1px;
+    margin-right: 2px;
 }
 
 
@@ -129,7 +134,7 @@ a{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    margin-top: 300px;
+    margin-top: 100px;
     
 }
 
@@ -151,6 +156,7 @@ a{
     width: 31%;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 350px;
 }
 
 
