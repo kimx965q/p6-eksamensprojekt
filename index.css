@@ -6,27 +6,76 @@
 }
 
 body{
-    background: gainsboro;
+    background: white ;
+    min-height: 100vh;
+    position: relative;
+    height: 100%;
 }
 
+main{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*nav*/
+
+header{
+    margin-right: 100px;
+    margin-left: 100px;
+}
 nav{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   min-height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 20vh;
+    background: white;
+    box-shadow:  0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.logo{
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color:  #E4484A;
+
+nav img{
+    width: 18%;
+    display: block;
+    margin-top: 1rem;
+    margin-left: 100px;
+}
+
+.nav-top{
+    display: flex;
+    margin-top: 20px;
+    margin-left: -5%;
+}
+
+.nav-top a{
+    margin-right: 20px;
+}
+
+.nav-buttom{
+    display: flex;
+    margin-top: 25px;
+    margin-right: 100px;
+    width: 100%;
+   
+    
+}
+.nav-buttom a{
+    margin-left: 55px;
+}
+
+.nav-buttom a:hover{
+    border-bottom: 2px solid #020D59;
 }
 
 .nav-links{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    width: 35%;
+    width: 20%;
+    margin-right: 100px;
 }
 
 .nav-links li{
@@ -36,7 +85,7 @@ nav{
 }
 
 .nav-links li i {
-    margin-right: 10px;
+    margin-right: 20px;
     color: black;
 }
 
@@ -46,9 +95,9 @@ a{
 }
 
 .nav-btn1{
-    background: #E4484A;
+    background: #90AFD5;
     padding: 10px 30px;
-    border-radius: 4px;
+    
     color: white;
 }
 
@@ -58,29 +107,86 @@ a{
 }
 
 .nav-btn2{
-    background:#020D59;
-    padding: 10px 30px;
-    border-radius: 4px;
-    color: white;
+    border: 2px solid #90AFD5;
+    padding-left: 7%;
+}
+
+
+.nav-btn2 a{
+    color: black;
 }
 
 .nav-btn2:hover{
-    background: #50cdfb;
+    background:#90AFD5;
     transition: 0.2s ease-out;
 }
 
-.nav-btn3{
-    background: none;
-    padding: 10px 30px;
-    border: 2px solid #020D59;
-    border-radius: 4px;
+
+.citat1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 300px;
+    
+}
+
+.citat1 h1{
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+
+.citat1 p{
+    text-align: center;
+}
+
+.citat1 .images{
+    margin-top: 30px;  
+}
+
+.images img {
+    width: 31%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+/*Footer*/
+
+footer{
+    background: #90AFD5;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer p{
+    line-height: 1.5rem;
+}
+
+.footer-content{
+    margin-top: 30px;
+    display: flex;
     color: white;
-}
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+} 
 
-.nav-btn3:hover{
-    background: #50cdfb;
-    transition: 0.2s ease-out;
-}
+
+
+
+
+
+
 
 .burger{
     display: none;
@@ -105,13 +211,63 @@ a{
     body{
         overflow-x: hidden;
     }
+    nav img{
+        width: 30%;
+    }
     
+    .nav-top{
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+        width: 50%;
+    }
+    
+    .nav-top a{
+        margin-bottom: 0;
+    }
+    
+    .nav-buttom{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        margin-left: 87%;
+        width: 100%;
+        
+    }
+    .nav-buttom a{
+        line-height: 90px;
+        font-size: 20px;
+        font-weight: 550;
+    }
+
+    .nav-btn1{
+        background: #90AFD5;
+        padding: 12px 30px;
+        border-radius: 18px;
+        color: white;
+    }
+
+    .nav-btn2{
+        border: 2px solid #90AFD5;
+        padding: 12px 4px;
+        border-radius: 18px;
+        margin-top: 35px;
+    }
+    
+    .nav-btn2 i{
+        margin-left: 12%;
+    }
+    
+    .nav-btn2 a{
+        color: black;
+    }
+
     .nav-links{
         position: absolute;
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: white;
+        background-color: #f3f3f3;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -129,16 +285,66 @@ a{
     }
 
     .nav-btn1{
-        background: #E4484A;
-        padding: 10px 30px;
-        border-radius: 4px;
+        background:  #90AFD5;
+        padding: 15px 40px;
+        border-radius: 18px;
         color: black;
     }
     
-    .nav-btn1:hover{
-        background:#020D59;
-        transition: 0.2s ease-out;
+    .citat1{
+        margin-top: 200px;
+        margin-left: 100px;
     }
+    
+    .citat1 h1{
+        font-size: 30px;
+        font-weight: 400;
+        width: 82%;
+    }
+
+    .citat1 p{
+    width: 83%;        
+    }
+    
+    .citat1 .images{
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    
+    .images img {
+        width: 85%;
+        margin-bottom: 15px;
+        
+    }
+
+    footer{
+        background: #90AFD5;
+        height: 300px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    footer p{
+        line-height: 1rem;
+        font-size: 12px;
+    }
+    
+    .footer-content{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 94%;
+        color: white;
+    } 
+    
+
+
 }
 
 .nav-active{
