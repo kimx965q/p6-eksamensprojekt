@@ -15,6 +15,7 @@
     width: 900px; /* Midlertidig container settings forud for hjemmesidens CSS */
     text-align: center; /* Midlertidig container settings forud for hjemmesidens CSS */
     margin-top: 50px;
+    z-index: -1;
 }
 
 
