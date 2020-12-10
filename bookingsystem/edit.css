@@ -14,7 +14,7 @@
 .label{
     padding: 20px 130px;
     font-size: 35px;
-    font-weight: blod;
+    font-weight: bold;
     color: yellow;
 }
 
@@ -53,7 +53,7 @@
     background: green;
     border-radius: 3px;
     border: 1px solid red;
-    transition:
+    
 }
 
 .login_form button:hover{

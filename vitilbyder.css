@@ -1,0 +1,102 @@
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/*content1---start*/
+.tilbud-content1 h2{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.tilbud-content1 h3{
+    margin-left: 25px;
+}
+
+.txt-box1 p{
+    margin-left: 25px;
+}
+
+.txt-and-img1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.txt-box1{
+    width: 785px;
+    height: 411px;
+    background: #90AFD5;
+    
+}
+
+.tilbud-img1 img{
+    width: 785px;
+    height: 411px;
+    margin-left: 25px;
+}
+
+/*content1---slut*/
+
+/*content2---start*/
+
+.tilbud-content2 h2{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+.txt-box2 p{
+    margin-left: 25px;
+}
+
+
+.txt-and-img2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.txt-box2{
+    width: 785px;
+    height: 411px;
+    background: #90AFD5;
+    
+}
+
+.tilbud-img2 img{
+    width: 785px;
+    height: 411px;
+    margin-left: 25px;
+}
+
+/*content2---slut*/
+
+
+.tilbud-content3 h2{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+.txt-box3 p{
+    margin-left: 25px;
+}
+
+
+.txt-and-img3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.txt-box3{
+    width: 785px;
+    height: 411px;
+    background: #90AFD5;
+    
+}
+
+.tilbud-img3 img{
+    width: 785px;
+    height: 411px;
+    margin-left: 25px;
+}

@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/popup/popup.css">
-
+    <link rel="stylesheet" href="bookingsystem\edit.css">
     <link rel="stylesheet" href="/omOs.css">
+    <link rel="stylesheet" href="/kontakt.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="/popup/popup.js" defer></script>
     <script src="/index.js" defer></script>
+    <script src="bookingsystem\edit.js" derfer></script>
 </head>
 
 <body>
@@ -70,9 +72,23 @@
         </div>
         </div>
 
-        <div class="">
-            
+        <div class="kontakt-content">
+            <h1>Log på og book tid</h1>
+
+            <div class="container">
+            <h1 class="label">User Login</h1>
+            <form class="login_form" action="#" method="post" name="form" onsubmit="return validated()">
+                <div class="font">Email or Phone</div>
+                <input autocomplete="off" type="text" name="email">
+                <div id="email_error">Please fill up your Email or Phone</div>
+                <div class="font font2">Password</div>
+                <input type="password" name="password">
+                <div id="pass_error">Please fill up your password</div>
+                <button type="submit">Login</button>
+            </form>
         </div>
+        </div>
+        
     </main>
     <footer>
         <div class="footer-content">
