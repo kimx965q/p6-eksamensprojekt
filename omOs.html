@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="/popup/popup.js" defer></script>
-    <script src="index.js" defer></script>
-    <script src="/slider/slider.js" defer></script>
-    <script src="/kalender/kalender.js" defer></script>
+    
+    <script src="slider/slider.js" defer></script>
+    <script src="kalender/kalender.js" defer></script>
     <script src="/faq/faq.js" defer></script>
 
 </head>
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
 
 
         <div class="om-os-content">
@@ -100,7 +100,8 @@
                         hvor
                         driften finansieres af Odense Kommune i henhold til indgået driftsoverenskomst. Stedet drives af
                         en bestyrelse med repræsentanter fra SIND, medarbejdere, brugere og frivillige af Stoppestedet
-                        samt Odense Byråd.</Vi>
+                        samt Odense Byråd.
+                    </p>
                 </div>
 
                 <div class="om-os-img">
@@ -150,12 +151,12 @@
 
         <!-- Kalender kodning. Start -->
         <div class="calendar" id="calendar">
-            <div class="calendar-btn month-btn" onclick="$('#months').toggle('fast')">
+            <div class="calendar-btn month-btn" onclick="('#months').toggle('fast')">
                 <span id="curMonth"></span>
                 <div id="months" class="months dropdown"></div>
             </div>
 
-            <div class="calendar-btn year-btn" onclick="$('#years').toggle('fast')">
+            <div class="calendar-btn year-btn" onclick="('#years').toggle('fast')">
                 <span id="curYear"></span>
                 <div id="years" class="years dropdown"></div>
             </div>
@@ -174,8 +175,7 @@
 
                     <div class="clear"></div>
                 </div>
-                <div id="calendarDays" class="days">
-                </div>
+                <div id="calendarDays" class="days"></div>
             </div>
         </div>
 
@@ -238,48 +238,44 @@
         <div class="faq-container">
             <h1>FAQ</h1>
             <!-- START på faq accordion-->
-          <div class="faq_container">
-            
-            <button class="question">Section 1</button>
-            <div class="answer">
-              <p>Lorem ipsum...</p>
-            </div>
-            
-            <button class="question">Section 2</button>
-            <div class="answer">
-              <p>Lorem ipsum...</p>
-            </div>
-            
-            <button class="question">Section 3</button>
-            <div class="answer">
-              <p>Lorem ipsum...</p>
-            </div>
+            <div class="faq_container">
 
-            <button class="question">Section 4</button>
-            <div class="answer">
-              <p>Lorem ipsum...</p>
-            </div>
+                <button class="question">Section 1</button>
+                <div class="answer">
+                    <p>Lorem ipsum...</p>
+                </div>
 
-            <button class="question">Section 5</button>
-            <div class="answer">
-              <p>Lorem ipsum...</p>
-            </div>
+                <button class="question">Section 2</button>
+                <div class="answer">
+                    <p>Lorem ipsum...</p>
+                </div>
 
-            <button class="question">Section 6</button>
-            <div class="answer">
-              <p>Lorem ipsum...</p>
+                <button class="question">Section 3</button>
+                <div class="answer">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="question">Section 4</button>
+                <div class="answer">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="question">Section 5</button>
+                <div class="answer">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="question">Section 6</button>
+                <div class="answer">
+                    <p>Lorem ipsum...</p>
+                </div>
+
             </div>
-            
-          </div>
-          <!-- SLUT på faq accordion -->
+            <!-- SLUT på faq accordion -->
         </div>
 
 
 
-
-        </div>
-        </div>
-        </div>
     </main>
     <footer>
         <div class="footer-content">
@@ -319,9 +315,9 @@
 
             </div>
         </div>
-        </div>
-    </footer>
 
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

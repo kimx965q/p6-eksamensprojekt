@@ -198,9 +198,6 @@ footer p{
 
 
 
-
-
-
 .burger{
     display: none;
     cursor: pointer;
@@ -306,83 +303,6 @@ footer p{
         margin-right: 50px;
     }
 
-    .citat-img-wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-    }
-
-
-    .images{
-        display: flex;
-        flex-direction: column;
-
-        
-    }
-
-    .footer-content{
-        margin: 50px;
-    
-
-    }
-
-    .modal-content{
-        width: 85%;
-    }
-    
-    
-   
-    
-    .citat1 h1{
-        font-size: 25px;
-        font-weight: 500;
-        width: 70%;
-        text-align: center;
-    }
-
-    
-    
-    .citat1 .images{
-        display: flex;
-        flex-direction: column;
-        margin-left: 40px;
-        margin-top: 30px;
-    }
-    
-    .images img {
-        width: 100%;
-        margin-bottom: 15px;
-        
-    }
-
-    footer{
-        background: #90AFD5;
-        height: 300px;
-        position: relative;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        
-    }
-    footer p{
-        line-height: 1rem;
-        font-size: 12px;
-    }
-    
-    .footer-content{
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        width: 94%;
-        color: white;
-    } 
-    
-
-
-
 
 .nav-active{
     transform:translateX(0%);
@@ -393,6 +313,62 @@ footer p{
     padding-bottom: 80px;
     padding-top: 26px;
 }
+
+
+
+
+.modal-content{
+    width: 85%;
+}
+
+
+
+
+.citat1 h1{
+    font-size: 25px;
+    font-weight: 500;
+    width: 70%;
+    text-align: center;
+}
+
+
+
+.citat1 .images{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.images img {
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+
+footer{
+    background: #90AFD5;
+    height: 300px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer p{
+    line-height: 1rem;
+    font-size: 12px;
+}
+
+.footer-content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    color: white;
+} 
 }
 
 @keyframes navLinkFade{
@@ -417,3 +393,4 @@ footer p{
 .toggle .line3{
     transform: rotate(45deg) translate(-8px,-8px);
 }
+

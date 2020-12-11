@@ -255,14 +255,16 @@ body{
     overflow-x: hidden;
 }
 nav img{
-    width: 30%;
+    width: 60%;
+}
+main{
+    margin: 0;
+    overflow: hidden;
 }
 
 .nav-top{
     display: flex;
     flex-direction: column;
-    margin-left: 7%;
-    width: 50%;
 }
 
 .nav-top a{
@@ -279,20 +281,22 @@ nav img{
     line-height: 90px;
     font-size: 20px;
     font-weight: 550;
+    margin-left: 0;
 }
 
 .nav-btn1{
     background: #90AFD5;
-    padding: 12px 30px;
-    border-radius: 18px;
+    padding: 13px 46px;
+    border-radius: 0;
     color: white;
+    cursor: pointer;
 }
 
 .nav-btn2{
     border: 2px solid #90AFD5;
-    padding: 12px 4px;
-    border-radius: 18px;
-    margin-top: 35px;
+    padding: 10px;
+    margin-top: 51px;
+    cursor: pointer;
 }
 
 .nav-btn2 i{
@@ -319,6 +323,11 @@ nav img{
 
 .nav-links li{
     opacity: 0;
+    margin-left: 0;
+}
+.nav-content{
+    padding-left: 230px;
+    padding-right: 0;
 }
 
 .burger{
@@ -328,13 +337,19 @@ nav img{
     justify-content: center;
     margin-right: 50px;
 }
-
-.nav-btn1{
-    background:  #90AFD5;
-    padding: 15px 40px;
-    border-radius: 18px;
-    color: black;
+.nav-active{
+    transform:translateX(0%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    padding-top: 26px;
+    
 }
+
+
+
 
 .modal-content{
     width: 85%;
@@ -362,10 +377,6 @@ nav img{
     }
 }
 @media screen and (max-width:768px){
-   main{
-       margin: 0;
-   }
-
    .txt-and-img{
        flex-direction: column;
    }
@@ -378,11 +389,7 @@ nav img{
    nav img {
     width: 60%;
 }
-    .nav-content{
-        padding-left: 230px;
-        padding-right: 0;
-    }
-
+   
 }
 
 
@@ -405,4 +412,27 @@ nav img{
     .phonetime{
         margin-top: 20px;
     }
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-10px,10px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-8px,-8px);
 }
