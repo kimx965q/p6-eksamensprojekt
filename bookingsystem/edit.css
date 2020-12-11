@@ -4,14 +4,14 @@
 }
 
 .container{
-    position: relative;
+    position: static;
     margin-top: 50px;
     width: 555px;
     height: auto;
     background: lightgrey;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    z-index: -1;
+    
 }
 .label{
     padding: 20px 80px;

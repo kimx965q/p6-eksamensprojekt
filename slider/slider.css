@@ -10,11 +10,13 @@
 /* Slideshow container */
 .slideshow-container {
     max-width: 100%;
-    position: relative;
-    margin: auto;
+    position: static;
+    margin-top: 25px;
     width: 100%; /* Midlertidig container settings forud for hjemmesidens CSS */
     text-align: center; /* Midlertidig container settings forud for hjemmesidens CSS */
+    background:#ddd;
 }
+
 
 
 /* Skjul billederne som standard */
@@ -51,7 +53,7 @@ der varierer på billederne, når man bladrer */
 /* Næste og forrige knapper */
 .prev, .next {
     cursor: pointer;
-    position: absolute;
+    position: static;
     top: 240px;
     width: auto;
     color: #dd114e;
@@ -60,6 +62,7 @@ der varierer på billederne, når man bladrer */
     transition: 0.2s ease;
     user-select: none;
     padding: 0 10px;
+    
 }
 
  /* specifik styling til næste knapperne*/
@@ -75,8 +78,6 @@ der varierer på billederne, når man bladrer */
 .prev:hover, .next:hover {
     color: #BCCFDA;
 }
-
-
 
 .dot-container {
     background-color: #ddd;
