@@ -14,6 +14,7 @@ height: 100%;
 
 main{
 margin: 100px;
+overflow: hidden;
 }
 
 /*nav*/
@@ -21,7 +22,6 @@ margin: 100px;
 
 header{
     height: 170px;
-    
 }
 
 
@@ -48,7 +48,7 @@ nav{
 
 
 nav img{
-    width: 22%;
+    width: 20%;
     margin-top: 10px;
     display: block;   
     
@@ -136,9 +136,7 @@ a{
 .om-os-content{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    
 }
 
 .om-os-content h1{
@@ -148,106 +146,97 @@ a{
 .txt-and-img{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+
 }
 .txt-box{
-    width: 785px;
-    height: 411px;
     background: #90AFD5;
     margin-right: 25px;
+    width: 46%;
+    height: max-content;
 }
+
 .txt-box p{
-    margin: 40px 20px;
-    
+    margin: 40px;
 }
+
 .om-os-img img{
-    width: 785px;
-    height: 411px;
-    margin-left: 25px;
+    width: 100%;
+    
+    height: 100%;
 }
 
 .personale-content{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 60px;
 }
 
-.personale-content h1{
-    margin-left: 650px;
-}
+
 
 .row1{
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
-
+    width: 100%;
 }
 
 .row1 img{
-    width: 350px;
-    height: 425px;
+    width: 120%;
 }
 
 .p1{
-   margin-right: 37.5px;
+
    display: flex;
    flex-direction: column;
-   justify-content: baseline;
-   align-items: center
+   align-items: center;
 }
 
 .p2{
-    margin-right: 37.5px;
-    margin-left: 37.5px;
+    
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
-    align-items: center
+    align-items: center;
  }
 
  .p3{
-    margin-left: 37.5px;
+    
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
-    align-items: center
+    align-items: center;
  }
 
  .row2{
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
+    width: 100%;;
 }
 
 .row2 img{
-    width: 350px;
-    height: 425px;
+    width: 120%;
+    ;
 }
 
 
  .p4{
-    margin-right: 37.5px;
+    
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
-    align-items: center
+    align-items: center;
  }
  
  .p5{
-     margin-right: 37.5px;
-     margin-left: 37.5px;
+    
      display: flex;
      flex-direction: column;
-     justify-content: baseline;
-     align-items: center
+     align-items: center;
   }
  
   .p6{
-     margin-left: 37.5px;
      display: flex;
      flex-direction: column;
-     justify-content: baseline;
-     align-items: center
+     align-items: center;
   }
 
 
@@ -265,6 +254,7 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -298,12 +288,6 @@ transition: all 0.3s ease;
 
 
 
-@media screen and (max-width:1200px){
-.nav-links{
-    width: 60%;
-}
-}
-
 @media screen and (max-width:768px){
 body{
     overflow-x: hidden;
@@ -326,8 +310,6 @@ nav img{
 .nav-buttom{
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
-    margin-left: 87%;
     width: 100%;
     
 }
@@ -379,6 +361,10 @@ nav img{
 
 .burger{
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
 }
 
 .nav-btn1{
@@ -388,4 +374,58 @@ nav img{
     color: black;
 }
 
+.modal-content{
+    width: 85%;
+}
+
+}
+
+@media (max-width:1200px){
+
+    .txt-box{
+        width: 57%;
+        margin-right: 7px;
+    }
+       
+}
+@media screen and (max-width:768px){
+   main{
+       margin: 0;
+   }
+
+   .txt-and-img{
+       flex-direction: column;
+   }
+
+   .txt-box {
+    width: 100%;
+    margin-right: 0;
+   }
+
+   nav img {
+    width: 60%;
+}
+    .nav-content{
+        padding-left: 230px;
+        padding-right: 0;
+    }
+
+}
+@media screen and (max-width:480px){
+    main{ 
+        margin:0;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        align-items: f;
+    }
+
+    .phonetime{
+        margin-top: 20px;
+    }
 }

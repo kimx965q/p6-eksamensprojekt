@@ -12,9 +12,10 @@
     max-width: 100%;
     position: relative;
     margin: auto;
-    width: 900px; /* Midlertidig container settings forud for hjemmesidens CSS */
+    width: 100%; /* Midlertidig container settings forud for hjemmesidens CSS */
     text-align: center; /* Midlertidig container settings forud for hjemmesidens CSS */
     margin-top: 50px;
+    z-index: -1;
 }
 
 
