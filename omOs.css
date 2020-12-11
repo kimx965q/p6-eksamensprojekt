@@ -382,9 +382,13 @@ nav img{
 
 @media (max-width:1200px){
 
+    .txt-and-img{
+        flex-direction: column;
+    }
+
     .txt-box{
-        width: 57%;
-        margin-right: 7px;
+        width: 100%;
+        
     }
        
 }

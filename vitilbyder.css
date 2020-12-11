@@ -85,12 +85,44 @@ h1{
 }
 
 @media (max-width:1200px){
+    .txt-and-img1{
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .txt-box1{
+        width: 100%;
+    }
+
     .tilbud-img1 img{
-        margin-left: 7px;
+        margin-left: 0;
+    }
+
+    .txt-and-img2{
+        flex-direction: column-reverse;
+        margin-bottom: 25px;
+    }
+
+    .txt-and-img3{
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .txt-box2{
+        width: 100%;
+    }
+
+    .tilbud-img2 img{
+        width: 100%;
+        margin-right: 0;
     }
 
     .tilbud-img3 img{
-        margin-left: 7px;
+        margin-left: 0;
+    }
+
+    .txt-box3{
+        width: 100%;
     }
 
 }

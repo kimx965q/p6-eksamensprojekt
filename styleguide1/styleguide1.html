@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"
         type="text/css">
-        <script src="/slider/slider.js" defer></script>
+    <script src="/slider/slider.js" defer></script>
 </head>
 
 
@@ -27,7 +27,7 @@
             <a href="#covidbox">Pop-up</a>
             <a href="#bslider">Slider</a>
             <a href="#kalender">Calender</a>
-            
+
         </nav>
     </header>
     <main>
@@ -169,7 +169,7 @@
                 <h2>Logo.</h2>
             </div>
             <div class="container3">
-                
+
 
                 <div class="old-logo">
                     <div class="titles">
@@ -361,43 +361,44 @@
             </div>
 
             <div class="container8">
-                 <!-- START på slider kode-->
-            <div class="slideshow-container">
-              
-                <!-- Billeder med billednummer og caption tekst -->
-                <div class="mySlides">
-                    <img class="foto" src="/slider/img/quakka-1.jpg" alt="quakka 1">
-                    <div class="text_container">
-                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus ad, enim tempora architecto atque id ratione animi</div>
-                  </div>
-                  </div>
-            
-                <div class="mySlides">
-                    <img class="foto" src="/slider\img\quakka-2.jpg" alt="quakka 2">
-                    <div class="text_container">
-                      <div class="text">Tekst 2</div>
-                  </div>
-                  </div>
-            
-                <div class="mySlides">
-                    <img class="foto" src="/slider\img\quakka-3.jpg" alt="quakka 3">
-                    <div class="text_container">
-                      <div class="text">Tekst 3</div>
-                  </div>
-                </div>
+                <!-- START på slider kode-->
+                <div class="slideshow-container">
 
-                <!-- Næste og forrige knapper -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  
-                <div class="dot-container">
-                    <!-- Prikkerne under slideshowet, der indikerer hvilket billede i rækken, du er på-->
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <!-- Billeder med billednummer og caption tekst -->
+                    <div class="mySlides">
+                        <img class="foto" src="/slider/img/quakka-1.jpg" alt="quakka 1">
+                        <div class="text_container">
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus
+                                ad, enim tempora architecto atque id ratione animi</div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img class="foto" src="/slider\img\quakka-2.jpg" alt="quakka 2">
+                        <div class="text_container">
+                            <div class="text">Tekst 2</div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img class="foto" src="/slider\img\quakka-3.jpg" alt="quakka 3">
+                        <div class="text_container">
+                            <div class="text">Tekst 3</div>
+                        </div>
+                    </div>
+
+                    <!-- Næste og forrige knapper -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="dot-container">
+                        <!-- Prikkerne under slideshowet, der indikerer hvilket billede i rækken, du er på-->
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
                 </div>
-            </div>
-            <!-- SLUT på slider kode -->
+                <!-- SLUT på slider kode -->
             </div>
         </div>
 
@@ -409,18 +410,18 @@
             <div class="container9">
 
                 <div class="calendar" id="calendar">
-                    <div class="calendar-btn month-btn" onclick="$('#months').toggle('fast')">
+                    <div class="calendar-btn month-btn" onclick="('#months').toggle('fast')">
                         <span id="curMonth"></span>
                         <div id="months" class="months dropdown"></div>
                     </div>
-            
-                    <div class="calendar-btn year-btn" onclick="$('#years').toggle('fast')">
+
+                    <div class="calendar-btn year-btn" onclick="('#years').toggle('fast')">
                         <span id="curYear"></span>
                         <div id="years" class="years dropdown"></div>
                     </div>
-            
+
                     <div class="clear"></div>
-            
+
                     <div class="calendar-dates">
                         <div class="days">
                             <div class="day label">SØN</div>
@@ -430,11 +431,10 @@
                             <div class="day label">TORS</div>
                             <div class="day label">FRE</div>
                             <div class="day label">LØR</div>
-            
+
                             <div class="clear"></div>
                         </div>
-                        <div id="calendarDays" class="days">
-                        </div>
+                        <div id="calendarDays" class="days"></div>
                     </div>
                 </div>
             </div>
