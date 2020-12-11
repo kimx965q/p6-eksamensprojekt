@@ -1,4 +1,4 @@
-// variablerne indeholder: måneder, år, hvad 
+// variablerne indeholder: måneder, år
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var startYear = 2010;
 var endYear = 2021;
