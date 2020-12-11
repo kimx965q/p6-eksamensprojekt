@@ -14,8 +14,6 @@
     margin: auto;
     width: 100%; /* Midlertidig container settings forud for hjemmesidens CSS */
     text-align: center; /* Midlertidig container settings forud for hjemmesidens CSS */
-    margin-top: 50px;
-    z-index: -1;
 }
 
 
@@ -42,7 +40,7 @@ der varierer på billederne, når man bladrer */
 /* Tekst til billed-captions */
 .text {
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     padding: 18px 150px;
     width: auto;
@@ -120,6 +118,28 @@ der varierer på billederne, når man bladrer */
         padding: 8px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .prev, .next {
+        font-size: 35px;
+        padding: 8px;
+    }
+    .slideshow-container{
+        width: 90%;
+    }
+
+    .foto{
+        width: 90%;
+    }
+    
+
+    
+
+}
+
+
+
 
 @media screen and (max-width: 550px) {
     .prev, .next {
