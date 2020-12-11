@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stoppestedet:Et trygt værested for den psykisk sårbare</title>
-    <meta name="description" content="Et fristed og trygt fælleskab: Stoppestedet Odense er et værested med plads til psykisk sårbarhed, hvor du kan komme som du er, og hvor din anonymitet værnes.">
-    <link rel="stylesheet" href="popup/popup.css" type="text/css">
-    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Booking</title>
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="bookingsystem\edit.css">
+    <link rel="stylesheet" href="omOs.css">
+    <link rel="stylesheet" href="frivillig.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"
-        type="text/css">
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="popup/popup.js" defer></script>
     <script src="index.js" defer></script>
+    <script src="bookingsystem/edit.js" defer></script>
 </head>
-
-
 
 <body>
     <header>
@@ -35,7 +34,7 @@
                     <ul class="nav-buttom">
                         <li><a href="omOs.html">Om os</a></li>
                         <li><a href="vitilbyder.html">Tilbud</a></li>
-                        <li><a href="frivillig.html">Frivillig</a></li>
+                        <li><a href="#"><b> Frivillig</b></a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -60,7 +59,7 @@
                 <div class="modal-body">
                     <img src="/img/covidavatar.png" alt="avatar">
                     <div class="bdytxt">
-                        <h2>Stoppestedet holder stadig åben</h2>
+                        <h2> Stoppestedet holder stadig åben</h2>
                         <p>Vi er et socialt værested. Derfor må vi gerne være op til 30 personer
                             Krav om afstand og hygiejne overholdes selvfølgelig. <br>
 
@@ -81,19 +80,24 @@
             </div>
         </div>
         </div>
-        <div class="citat-img-wrapper">
-            <div class="citat1">
-                <h1>"Det eneste sted i Odense, hvor du kan komme, som du er." - bruger</h1>
-                <p>Stoppestedet er et værested, hvor der er plads til psykisk sårbarhed.
-                    Det er et fristed og et trygt fællesskab, hvor du kan komme,
-                    som du er – og hvor vi værner om din anonymitet.</p>
 
+        <div class="kontakt-content">
+            <div class="heading">
+                <h1>Er du frivillig, kan du logge ind her.</h1>
+                <p>Du kan her booke tid til at komme som frivillig på Stoppestedet.</p>
             </div>
 
-            <div class="images">
-                <img src="img/forsideimg1.png" alt="tegnestifter i krus">
-                <img src="img/forsidespil.png" alt="forskellige brætspil">
-                <img src="img/forsidekrus.png" alt="tegnestifter i krus">
+            <div class="container">
+                <h1 class="label">Login til frivillige</h1>
+                <form class="login_form" action="#" method="post" name="form" onsubmit="return validated()">
+                    <div class="font">Email or Phone</div>
+                    <input autocomplete="off" type="text" name="email">
+                    <div id="email_error">Please fill up your Email or Phone</div>
+                    <div class="font font2">Password</div>
+                    <input type="password" name="password">
+                    <div id="pass_error">Please fill up your password</div>
+                    <button type="submit">Login</button>
+                </form>
             </div>
         </div>
 
@@ -127,14 +131,16 @@
                     Søn-/helligdage: 17.00 - 22.00 <br>
                     Lørdag lukket.
                 </p> <br>
-                <div class="social-media">
+                <div class="social-media"></div>
 
-                    <a href="#"><i class="fab fa-facebook"> </i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"> </i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
 
-                </div>
+
+
             </div>
-
+        </div>
+        </div>
     </footer>
 
 </body>

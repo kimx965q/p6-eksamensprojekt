@@ -1,6 +1,27 @@
-.kontakt-content{
+.bf-img{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+h1{
+    width: 60%;
+    text-align: center;
+
+    color: #020D59;
+}
+h2{
+    padding-top: 38px;
+    padding-left: 38px;
+}
+.txt-and-img{
+    margin: 10px;
+}
+
+@media (max-width: 1200px){
+    iframe{
+        width: 100%;
+    }
+}
+

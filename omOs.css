@@ -164,94 +164,44 @@ a{
     
     height: 100%;
 }
+/*Personale på stoppestedet*/
 
-.personale-content{
+.personale-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
-
-
 
 .row1{
     display: flex;
-    margin-top: 30px;
     justify-content: space-between;
     width: 100%;
+    margin-top: 25px;
 }
 
-.row1 img{
-    width: 120%;
-}
-
-.p1{
-
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   max-width: 100%;
-}
-
-.p2{
-    
+.row2{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 100%;
- }
-
- .p3{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 100%;
- }
-
- .row2{
-    display: flex;
-    margin-top: 30px;
     justify-content: space-between;
-    width: 100%;;
+    width: 100%;
+    margin-top: 25px;
+}
+.p-navn{
+    font-size: 24px;
 }
 
-.row2 img{
-    width: 120%;
-    ;
+.p-beskrivelse{
+    font-size: 16px;
+    line-height: 30px;
 }
 
-
- .p4{
-    
+/*---FAQ section---*/
+.faq-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    max-width: 100%;
- }
- 
- .p5{
-    
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-    max-width: 100%;
-  }
- 
-  .p6{
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-    max-width: 100%;
-  }
-
-.pnavn{
-    font-size: 20px;
-    font-weight: 600;
-}
-.p-beskrivelse{
-    font-size: 13px;
-    width: 127%;
+    align-items: center;
 }
 
 
@@ -295,6 +245,7 @@ background-color: black;
 margin: 5px;
 transition: all 0.3s ease;
 }
+
 
 
 
@@ -398,9 +349,11 @@ nav img{
 
     .txt-box{
         width: 100%;
-        
     }
-       
+    .row1, .row2{
+    align-items: center;
+    flex-direction: column;
+    }
 }
 @media screen and (max-width:768px){
    main{
@@ -425,6 +378,10 @@ nav img{
     }
 
 }
+
+
+
+
 @media screen and (max-width:480px){
     main{ 
         margin:0;

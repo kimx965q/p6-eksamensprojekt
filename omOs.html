@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="slider/slider.css">
     <link rel="stylesheet" href="omOs.css">
     <link rel="stylesheet" href="kalender/kalender.css">
+    <link rel="stylesheet" href="/faq/faq.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="popup/popup.js" defer></script>
+    <script src="/popup/popup.js" defer></script>
     <script src="index.js" defer></script>
-    <script src="slider/slider.js" defer></script>
-    <script src="kalender/kalender.js" defer></script>
+    <script src="/slider/slider.js" defer></script>
+    <script src="/kalender/kalender.js" defer></script>
+    <script src="/faq/faq.js" defer></script>
+
 </head>
 
 <body>
@@ -35,7 +38,7 @@
                     <ul class="nav-buttom">
                         <li><a href="omOs.html"><b>Om os</b></a></li>
                         <li><a href="vitilbyder.html">Tilbud</a></li>
-                        <li><a href="#">Frivillig</a></li>
+                        <li><a href="frivillig.html">Frivillig</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -60,8 +63,8 @@
                 <div class="modal-body">
                     <img src="/img/covidavatar.png" alt="avatar">
                     <div class="bdytxt">
-                        <h2>Stoppestedet er et socialt værested</h2>
-                        <p>Derfor må vi gerne være op til 30 personer
+                        <h2>Stoppestedet holder stadig åben</h2>
+                        <p>Vi er et socialt værested. Derfor må vi gerne være op til 30 personer
                             Krav om afstand og hygiejne overholdes selvfølgelig. <br>
 
                             <br> Personalet og de frivillige vil bære visir eller mundbind, men
@@ -84,7 +87,7 @@
 
 
         <div class="om-os-content">
-            <h1>Om os</h1>
+            <h1>Læs om Stoppestedet</h1>
             <div class="txt-and-img">
                 <div class="txt-box">
                     <p><b> Stoppestedet er et værested</b>, hvor der er plads til psykisk sårbarhed. Det er et fristed
@@ -105,36 +108,37 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- START på slider kode-->
         <div class="slideshow-container">
-              
+
             <!-- Billeder med billednummer og caption tekst -->
             <div class="mySlides">
-                <img class="foto" src="slider/img/quakka-1.jpg" alt="quakka 1">
+                <img class="foto" src="/img/bhandligimg.png" alt="seng">
                 <div class="text_container">
-                  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus ad, enim tempora architecto atque id ratione animi</div>
-              </div>
-              </div>
-        
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus ad, enim
+                        tempora architecto atque id ratione animi</div>
+                </div>
+            </div>
+
             <div class="mySlides">
-                <img class="foto" src="slider/img/quakka-2.jpg" alt="quakka 2">
+                <img class="foto" src="/img/forsidespil.png" alt="brætspil">
                 <div class="text_container">
-                  <div class="text">Tekst 2</div>
-              </div>
-              </div>
-        
+                    <div class="text">Tekst 2</div>
+                </div>
+            </div>
+
             <div class="mySlides">
-                <img class="foto" src="slider/img/quakka-3.jpg" alt="quakka 3">
+                <img class="foto" src="/img/forsidekrus.png" alt="hyggeligt krus">
                 <div class="text_container">
-                  <div class="text">Tekst 3</div>
-              </div>
+                    <div class="text">Tekst 3</div>
+                </div>
             </div>
 
             <!-- Næste og forrige knapper -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
+
             <div class="dot-container">
                 <!-- Prikkerne under slideshowet, der indikerer hvilket billede i rækken, du er på-->
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -145,87 +149,135 @@
         <!-- SLUT på slider kode -->
 
         <!-- Kalender kodning. Start -->
-    <div class="calendar" id="calendar">
-        <div class="calendar-btn month-btn" onclick="$('#months').toggle('fast')">
-            <span id="curMonth"></span>
-            <div id="months" class="months dropdown"></div>
-        </div>
-
-        <div class="calendar-btn year-btn" onclick="$('#years').toggle('fast')">
-            <span id="curYear"></span>
-            <div id="years" class="years dropdown"></div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="calendar-dates">
-            <div class="days">
-                <div class="day label">SØN</div>
-                <div class="day label">MAN</div>
-                <div class="day label">TIRS</div>
-                <div class="day label">ONS</div>
-                <div class="day label">TORS</div>
-                <div class="day label">FRE</div>
-                <div class="day label">LØR</div>
-
-                <div class="clear"></div>
+        <div class="calendar" id="calendar">
+            <div class="calendar-btn month-btn" onclick="$('#months').toggle('fast')">
+                <span id="curMonth"></span>
+                <div id="months" class="months dropdown"></div>
             </div>
-            <div id="calendarDays" class="days">
+
+            <div class="calendar-btn year-btn" onclick="$('#years').toggle('fast')">
+                <span id="curYear"></span>
+                <div id="years" class="years dropdown"></div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="calendar-dates">
+                <div class="days">
+                    <div class="day label">SØN</div>
+                    <div class="day label">MAN</div>
+                    <div class="day label">TIRS</div>
+                    <div class="day label">ONS</div>
+                    <div class="day label">TORS</div>
+                    <div class="day label">FRE</div>
+                    <div class="day label">LØR</div>
+
+                    <div class="clear"></div>
+                </div>
+                <div id="calendarDays" class="days">
+                </div>
             </div>
         </div>
-    </div>
 
-        <div class="personale-content">
-            <h1>Personale på Stoppestedet</h1>
+        <div class="personale-container">
+            <h1>Personale på stoppestedet</h1>
             <div class="row1">
-                <div class="p1">
-                    <img src="img/silje.jpg" alt="billede af silje">
-                    <p class="pnavn">Silje</p>
-                    <p class="p-beskrivelse">Frivillig i Cafeen Stoppestedets <br>
+                <div class="person1">
+                    <img src="/img/silje.png" alt="Billede af Silje">
+                    <p class="p-navn">Silje</p>
+                    <p class="p-beskrivelse">
+                        Frivillig i Cafeen Stoppestedets <br>
                         Koordinator for ÅbentSIND: Silje Rousseau Bødker <br>
-                        E-mail: aabentsind@stoppestedet.dk <br>
-                        Tlf. 22740510</p>
+                        <b> E-mail:</b> aabentsind@stoppestedet.dk <br>
+                        <b> Tlf.</b> 22740510
+                    </p>
                 </div>
 
-                <div class="p2">
-                    <img src="img/christian.jpg" alt="billede af christian">
-                    <p class="pnavn">Christian</p>
+                <div class="person1">
+                    <img src="/img/christian.png" alt="Billede af Christian">
+                    <p class="p-navn">Christian</p>
                     <p class="p-beskrivelse">Frivillig i Cafeen Stoppestedets</p>
                 </div>
 
-                <div class="p3">
-                    <img src="img/rhonda.jpg" alt="billede af rhonda">
-                    <p class="pnavn">Rhonda</p>
+                <div class="person1">
+                    <img src="/img/rhonda.png" alt="Billede af Rhonda">
+                    <p class="p-navn">Rhonda</p>
                     <p class="p-beskrivelse">Frivillig i Cafeen Stoppestedets</p>
                 </div>
             </div>
+
             <div class="row2">
-                <div class="p4">
-                    <img src="img/inge.jpg" alt="billede af inge">
-                    <p class="pnavn">Inge</p>
+                <div class="person2">
+                    <img src="/img/inge.png" alt="Billed af Inge">
+                    <p class="p-navn">Inge</p>
                     <p class="p-beskrivelse">Sekretær Inge</p>
                 </div>
 
-                <div class="p5">
-                    <img src="img/birgit.jpg" alt="billede af birgit">
-                    <p class="pnavn">Birgit</p>
-                    <p class="p-beskrivelse">Daglig leder Birgit Boding <br>
-                        E-mail: bbhan@odense.dk <br>
-                        Tlf: 66 19 03 26 eller 23 41 45 61</p>
+                <div class="person2">
+                    <img src="/img/birgit.png" alt="Bilede af Birgit">
+                    <p class="p-navn">Birgit</p>
+                    <p class="p-beskrivelse">
+                        Daglig leder Birgit Boding <br>
+                        <b> E-mail:</b> bbhan@odense.dk <br>
+                        <b> Tlf:</b> 66 19 03 26 eller 23 41 45 61
+                    </p>
                 </div>
 
-                <div class="p6">
-                    <img src="img/camilla.jpg" alt="billede af Camilla">
-                    <p class="pnavn">Cammila</p>
-                    <p class="p-beskrivelse">Koordinator for frivillige: Camilla Hviid <br>
-                        e-mail: cahv@odense.dk <br>
-                        Tlf. 51169665</p>
-
+                <div class="person2">
+                    <img src="/img/camilla.png" alt="Billede af Camilla">
+                    <p class="p-navn">Camilla</p>
+                    <p class="p-beskrivelse">
+                        Koordinator for frivillige: Camilla Hviid <br>
+                        <b> E-mail:</b> cahv@odense.dk <br>
+                        <b> Tlf.</b> 51169665
+                    </p>
                 </div>
-
-
-
             </div>
+        </div>
+
+        <div class="faq-container">
+            <h1>FAQ</h1>
+            <!-- START på faq accordion-->
+          <div class="faq_container">
+            
+            <button class="question">Section 1</button>
+            <div class="answer">
+              <p>Lorem ipsum...</p>
+            </div>
+            
+            <button class="question">Section 2</button>
+            <div class="answer">
+              <p>Lorem ipsum...</p>
+            </div>
+            
+            <button class="question">Section 3</button>
+            <div class="answer">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="question">Section 4</button>
+            <div class="answer">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="question">Section 5</button>
+            <div class="answer">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="question">Section 6</button>
+            <div class="answer">
+              <p>Lorem ipsum...</p>
+            </div>
+            
+          </div>
+          <!-- SLUT på faq accordion -->
+        </div>
+
+
+
+
+        </div>
         </div>
         </div>
     </main>
