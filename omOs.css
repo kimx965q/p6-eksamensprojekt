@@ -189,21 +189,24 @@ a{
 
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
+   max-width: 100%;
 }
 
 .p2{
     
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 100%;
  }
 
  .p3{
     
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 100%;
  }
 
  .row2{
@@ -223,26 +226,33 @@ a{
     
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 100%;
  }
  
  .p5{
     
      display: flex;
      flex-direction: column;
-     align-items: center;
+     align-items: flex-start;
+    max-width: 100%;
   }
  
   .p6{
      display: flex;
      flex-direction: column;
-     align-items: center;
+     align-items: flex-start;
+    max-width: 100%;
   }
 
-
-
-
-
+.pnavn{
+    font-size: 20px;
+    font-weight: 600;
+}
+.p-beskrivelse{
+    font-size: 13px;
+    width: 127%;
+}
 
 
 
