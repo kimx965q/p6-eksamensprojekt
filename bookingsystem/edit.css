@@ -10,6 +10,8 @@
     height: auto;
     background: lightgrey;
     border-radius: 5px;
+    z-index: -1;
+    margin-bottom: 40px;
 }
 .label{
     padding: 20px 130px;

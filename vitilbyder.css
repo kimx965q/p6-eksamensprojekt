@@ -6,33 +6,27 @@ h1{
 }
 
 /*content1---start*/
-.tilbud-content1 h2{
-    margin-top: 25px;
-    margin-left: 25px;
-}
-.tilbud-content1 h3{
-    margin-left: 25px;
-}
 
-.txt-box1 p{
-    margin-left: 25px;
-}
 
 .txt-and-img1{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 50px;
 }
 .txt-box1{
-    width: 785px;
-    height: 411px;
+    width: 47%;
     background: #90AFD5;
-    
+    padding: 58px;   
+}
+
+.txt-box1 p{
+    width: 90%;
 }
 
 .tilbud-img1 img{
-    width: 785px;
-    height: 411px;
+    width: 100%;
+    height: 100%;
     margin-left: 25px;
 }
 
@@ -40,46 +34,34 @@ h1{
 
 /*content2---start*/
 
-.tilbud-content2 h2{
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
 
 .txt-box2 p{
-    margin-left: 25px;
+    width: 100%;
 }
-
 
 .txt-and-img2{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 50px;
 }
 .txt-box2{
-    width: 785px;
-    height: 411px;
+   width: 46.1%;
     background: #90AFD5;
-    
+    padding: 58px;
 }
 
 .tilbud-img2 img{
-    width: 785px;
-    height: 411px;
-    margin-left: 25px;
+    width: 99%;
+    height: 100%;
+    margin-right: 25px;
 }
 
 /*content2---slut*/
 
 
-.tilbud-content3 h2{
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-
 .txt-box3 p{
-    margin-left: 25px;
+    width: 100%;
 }
 
 
@@ -87,16 +69,70 @@ h1{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 50px;
 }
 .txt-box3{
-    width: 785px;
-    height: 411px;
+    width: 47%;
     background: #90AFD5;
-    
+    padding: 58px;   
 }
 
+
 .tilbud-img3 img{
-    width: 785px;
-    height: 411px;
+    width: 100%;
+    height: 100%;
     margin-left: 25px;
 }
+
+@media (max-width:1200px){
+    .tilbud-img1 img{
+        margin-left: 7px;
+    }
+
+    .tilbud-img3 img{
+        margin-left: 7px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .txt-and-img1{
+        flex-direction: column;
+    }
+
+    .txt-box1{
+        width: 100%;
+    }
+
+    .tilbud-img1 img {
+        margin-left: 0;
+    }
+
+    .txt-and-img2{
+        flex-direction: column-reverse;
+    }
+
+    .txt-box2{
+        width: 100%;
+    }
+
+    .tilbud-img2 img {
+        margin-left: 0;
+    }
+
+    .txt-and-img3{
+        flex-direction: column;
+    }
+    .txt-box3{
+        width: 100%;
+    }
+
+    .tilbud-img3 img {
+        margin-left: 0;
+    }
+    }
+
+
+@media screen and (max-width:480px){
+    
+    }

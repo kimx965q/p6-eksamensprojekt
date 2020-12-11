@@ -45,6 +45,7 @@ nav{
 }
 
 
+
 nav img {
     width: 22%;
     margin-top: 10px;
@@ -175,6 +176,7 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -212,25 +214,24 @@ footer p{
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%;
-    }
-}
 
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
     }
+
+    main{
+        margin: 0;
+        overflow: hidden;
+    }
+
     nav img{
-        width: 30%;
+        width: 60%;
     }
     
     .nav-top{
         display: flex;
         flex-direction: column;
-        margin-left: 7%;
-        width: 50%;
     }
     
     .nav-top a{
@@ -240,29 +241,29 @@ footer p{
     .nav-buttom{
         display: flex;
         flex-direction: column;
-        margin-bottom: 80px;
-        margin-left: 87%;
         width: 100%;
         
     }
     .nav-buttom a{
         line-height: 90px;
-        font-size: 20px;
+        font-size: 36px;
         font-weight: 550;
+        margin-left: 0;
     }
 
     .nav-btn1{
         background: #90AFD5;
-        padding: 12px 30px;
-        border-radius: 18px;
+        padding: 13px 46px;
+        border-radius: 0px;
         color: white;
+        cursor: pointer;
     }
 
     .nav-btn2{
         border: 2px solid #90AFD5;
-        padding: 12px 4px;
-        border-radius: 18px;
-        margin-top: 35px;
+        padding: 10px;
+        margin-top: 51px;
+        cursor: pointer;
     }
     
     .nav-btn2 i{
@@ -289,33 +290,58 @@ footer p{
 
     .nav-links li{
         opacity: 0;
+        margin-left: 0;
+    }
+
+    .nav-content{
+        padding-left: 230px;
+        padding-right: 0;
     }
 
     .burger{
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
     }
 
-    .nav-btn1{
-        background:  #90AFD5;
-        padding: 15px 40px;
-        border-radius: 18px;
-        color: black;
+    .citat-img-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+
+    .images{
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    .footer-content{
+        margin: 50px;
+    
+
+    }
+
+    .modal-content{
+        width: 85%;
     }
     
-    .citat1{
-        margin-top: 200px;
-        margin-left: 100px;
-    }
+    
+   
     
     .citat1 h1{
-        font-size: 30px;
-        font-weight: 400;
-        width: 82%;
+        font-size: 25px;
+        font-weight: 500;
+        width: 70%;
+        text-align: center;
     }
 
-    .citat1 p{
-    width: 83%;        
-    }
+    
     
     .citat1 .images{
         display: flex;
@@ -325,7 +351,7 @@ footer p{
     }
     
     .images img {
-        width: 85%;
+        width: 100%;
         margin-bottom: 15px;
         
     }
@@ -356,10 +382,17 @@ footer p{
     
 
 
-}
+
 
 .nav-active{
-    transform:translateX(0%)
+    transform:translateX(0%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    padding-top: 26px;
+}
 }
 
 @keyframes navLinkFade{
