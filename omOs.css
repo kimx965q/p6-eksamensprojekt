@@ -48,7 +48,7 @@ nav{
 
 
 nav img{
-    width: 20%;
+    width: 80%;
     margin-top: 10px;
     display: block;   
     
@@ -140,7 +140,8 @@ a{
 }
 
 .om-os-content h1{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    color: #020D59;
 }
 
 .txt-and-img{
@@ -337,6 +338,11 @@ nav img{
 
 .modal-content{
     width: 85%;
+}
+
+    h1{
+    font-size: 23px;
+    width: 92%;
 }
 
 }

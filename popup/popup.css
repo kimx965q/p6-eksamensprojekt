@@ -22,8 +22,8 @@ body{
 }
 
 @media screen and (max-width:1200px){
-    .button{
-        top: 38%;
+    .button {
+        top: 30%;
         left: 89%;
     }
     

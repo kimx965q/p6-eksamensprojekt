@@ -47,7 +47,7 @@ nav{
 
 
 nav img {
-    width: 22%;
+    width: 80%;
     margin-top: 10px;
     display: block;   
 }
@@ -142,7 +142,7 @@ a{
 .citat1 h1{
     font-size: 30px;
     font-weight: 400;
-    
+    color: #020D59;
 }
 
 .citat1 p{
@@ -407,7 +407,7 @@ footer p{
 }
 
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+    transform: rotate(-45deg) translate(-10px,10px);
 }
 
 .toggle .line2{
@@ -415,5 +415,5 @@ footer p{
 }
 
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+    transform: rotate(45deg) translate(-8px,-8px);
 }
