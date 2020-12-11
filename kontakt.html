@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forside</title>
-    <link rel="stylesheet" href="popup/popup.css" type="text/css">
-    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="bookingsystem\edit.css">
+    <link rel="stylesheet" href="omOs.css">
+    <link rel="stylesheet" href="kontakt.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"
-        type="text/css">
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="popup/popup.js" defer></script>
     <script src="index.js" defer></script>
+    <script src="bookingsystem/edit.js" defer></script>
 </head>
-
-
 
 <body>
     <header>
@@ -35,7 +35,7 @@
                         <li><a href="omOs.html">Om os</a></li>
                         <li><a href="vitilbyder.html">Tilbud</a></li>
                         <li><a href="#">Frivillig</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="kontakt.html"><b>Kontakt</b></a></li>
                     </ul>
                 </div>
             </div>
@@ -80,19 +80,21 @@
             </div>
         </div>
         </div>
-        <div class="citat-img-wrapper">
-            <div class="citat1">
-                <h1>"Det eneste sted i Odense, hvor du kan komme, som du er." - bruger</h1>
-                <p>Stoppestedet er et værested, hvor der er plads til psykisk sårbarhed.
-                    Det er et fristed og et trygt fællesskab, hvor du kan komme,
-                    som du er – og hvor vi værner om din anonymitet.</p>
 
-            </div>
+        <div class="kontakt-content">
+            <h1>Log på og book tid</h1>
 
-            <div class="images">
-                <img src="img/forsideimg1.png" alt="tegnestifter i krus">
-                <img src="img/forsidespil.png" alt="forskellige brætspil">
-                <img src="img/forsidekrus.png" alt="tegnestifter i krus">
+            <div class="container">
+                <h1 class="label">User Login</h1>
+                <form class="login_form" action="#" method="post" name="form" onsubmit="return validated()">
+                    <div class="font">Email or Phone</div>
+                    <input autocomplete="off" type="text" name="email">
+                    <div id="email_error">Please fill up your Email or Phone</div>
+                    <div class="font font2">Password</div>
+                    <input type="password" name="password">
+                    <div id="pass_error">Please fill up your password</div>
+                    <button type="submit">Login</button>
+                </form>
             </div>
         </div>
 
@@ -135,7 +137,7 @@
 
             </div>
         </div>
-
+        </div>
     </footer>
 
 </body>

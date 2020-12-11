@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om os</title>
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <link rel="stylesheet" href="omOs.css">
+    <link rel="stylesheet" href="kalender/kalender.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="popup/popup.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="slider/slider.js" defer></script>
+    <script src="kalender/kalender.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-content">
+                <img src="img/logo.png" alt="logo">
+
+                <div class="nav-links">
+                    <ul class="nav-top">
+                        <li><a href="blivfrivillig.html" class="nav-btn1">Bliv frivillig</a></li>
+                        <li class="nav-btn2">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="#">66 19 02 65</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav-buttom">
+                        <li><a href="omOs.html"><b>Om os</b></a></li>
+                        <li><a href="vitilbyder.html">Tilbud</a></li>
+                        <li><a href="#">Frivillig</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="modal-section"></div>
+        <button id="modalBtn" class="button">Covid - 19</button>
+
+        <div id="simpleModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn">&times;</span>
+                    <h2>Covid-19</h2>
+                </div>
+                <div class="modal-body">
+                    <img src="/img/covidavatar.png" alt="avatar">
+                    <div class="bdytxt">
+                        <h2>Stoppestedet er et socialt værested</h2>
+                        <p>Derfor må vi gerne være op til 30 personer
+                            Krav om afstand og hygiejne overholdes selvfølgelig. <br>
+
+                            <br> Personalet og de frivillige vil bære visir eller mundbind, men
+                            Det er ikke et krav til de besøgende at bære mundbind. <br>
+
+                            <br> Stoppestedet skal være et fristed for dig hvor du kan føle dig tryg,
+                            derfor begrænser vi vores møder med samarbejdspartnerne. <br>
+
+                            <br> Vi ser frem til nye tider uden restikationer,
+                            Men indtil nu skal vi stadig passe på hinanden
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="closeBtn2">Læst</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="om-os-content">
+            <h1>Om os</h1>
+            <div class="txt-and-img">
+                <div class="txt-box">
+                    <p><b> Stoppestedet er et værested</b>, hvor der er plads til psykisk sårbarhed. Det er et fristed
+                        og et trygt fællesskab, hvor du kan komme, som du er – og hvor vi værner om din anonymitet.
+                        <br> <br> Vi ved, hvor vigtigt det er, at være sammen med andre om noget. Derfor har vi et
+                        fællesskab, hvor der er plads til at være psykisk sårbar – uden at det behøver at være det, der
+                        definerer dig.
+                        <br> <br> “Det særlige ved Stoppestedet er, at der er plads til alle.” – bruger
+                        <br> <br> <b>Det praktiske</b> <br> Vi er en selvejende institution under landsforeningen SIND,
+                        hvor
+                        driften finansieres af Odense Kommune i henhold til indgået driftsoverenskomst. Stedet drives af
+                        en bestyrelse med repræsentanter fra SIND, medarbejdere, brugere og frivillige af Stoppestedet
+                        samt Odense Byråd.</Vi>
+                </div>
+
+                <div class="om-os-img">
+                    <img src="img/kop.png" alt="tegnestift i krus">
+                </div>
+            </div>
+        </div>
+        
+        <!-- START på slider kode-->
+        <div class="slideshow-container">
+              
+            <!-- Billeder med billednummer og caption tekst -->
+            <div class="mySlides">
+                <img class="foto" src="slider/img/quakka-1.jpg" alt="quakka 1">
+                <div class="text_container">
+                  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus ad, enim tempora architecto atque id ratione animi</div>
+              </div>
+              </div>
+        
+            <div class="mySlides">
+                <img class="foto" src="slider/img/quakka-2.jpg" alt="quakka 2">
+                <div class="text_container">
+                  <div class="text">Tekst 2</div>
+              </div>
+              </div>
+        
+            <div class="mySlides">
+                <img class="foto" src="slider/img/quakka-3.jpg" alt="quakka 3">
+                <div class="text_container">
+                  <div class="text">Tekst 3</div>
+              </div>
+            </div>
+
+            <!-- Næste og forrige knapper -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+            <div class="dot-container">
+                <!-- Prikkerne under slideshowet, der indikerer hvilket billede i rækken, du er på-->
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <!-- SLUT på slider kode -->
+
+        <!-- Kalender kodning. Start -->
+    <div class="calendar" id="calendar">
+        <div class="calendar-btn month-btn" onclick="$('#months').toggle('fast')">
+            <span id="curMonth"></span>
+            <div id="months" class="months dropdown"></div>
+        </div>
+
+        <div class="calendar-btn year-btn" onclick="$('#years').toggle('fast')">
+            <span id="curYear"></span>
+            <div id="years" class="years dropdown"></div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="calendar-dates">
+            <div class="days">
+                <div class="day label">SØN</div>
+                <div class="day label">MAN</div>
+                <div class="day label">TIRS</div>
+                <div class="day label">ONS</div>
+                <div class="day label">TORS</div>
+                <div class="day label">FRE</div>
+                <div class="day label">LØR</div>
+
+                <div class="clear"></div>
+            </div>
+            <div id="calendarDays" class="days">
+            </div>
+        </div>
+    </div>
+
+        <div class="personale-content">
+            <h1>Personale på Stoppestedet</h1>
+            <div class="row1">
+                <div class="p1">
+                    <img src="img/silje.jpg" alt="billede af silje">
+                    <p>Silje</p>
+                </div>
+
+                <div class="p2">
+                    <img src="img/christian.jpg" alt="billede af christian">
+                    <p>christian</p>
+                </div>
+
+                <div class="p3">
+                    <img src="img/rhonda.jpg" alt="billede af rhonda">
+                    <p>Rhonda</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="p4">
+                    <img src="img/inge.jpg" alt="billede af inge">
+                    <p>Inge</p>
+                </div>
+
+                <div class="p5">
+                    <img src="img/birgit.jpg" alt="billede af birgit">
+                    <p>Birgit</p>
+                </div>
+
+                <div class="p6">
+                    <img src="img/camilla.jpg" alt="billede af Camilla">
+                    <p>Rhonda</p>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="adress">
+                <p><b>Adresse</b></p>
+                <p>SIND værested Stoppestedet <br>
+                    Jernbanegade 24B <br>
+                    info@stoppestedet.dk</p>
+
+                <p><br> Værestedet Stoppestedet: 66190265 <br>Kontor:66190326</p>
+
+            </div>
+            <div class="opentime">
+                <p><b>Åbningstider for Stoppestedet</b></p>
+                <p>Mandag: 11.00 - 22.00 <br>
+                    Tirsdag: 11.00 - 15.00 <br>
+                    Onsdag - fredag: 11.00 - 22.00 <br>
+                    Lørdag - søndag: 14.00 - 20.00
+                </p>
+                <p>Helligedage: 14.00 - 22.00</p>
+                <p><br> Værestedet Stoppestedet har åbent <br>
+                    på alle helligedage undtagen 1.januar.</p>
+            </div>
+            <div class="phonetime">
+                <p><b>Telefonrådgivning</b></p>
+                <p>Telefonrådgivning: 70 23 27 50 <br>
+                    Hverdage: 11.00 - 22.00 <br>
+                    Søn-/helligdage: 17.00 - 22.00 <br>
+                    Lørdag lukket.
+                </p> <br>
+                <div class="social-media"></div>
+
+                <a href="#"><i class="fab fa-facebook"> </i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+
+
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

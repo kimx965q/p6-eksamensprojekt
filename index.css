@@ -6,37 +6,90 @@
 }
 
 body{
-    background: gainsboro;
+    background: white ;
+    min-height: 100vh;
+    position: relative;
+    height: 100%;
 }
+
+main{
+    margin: 100px;
+}
+
+/*nav*/
+
+header{
+    height: 170px;
+}
+
 
 nav{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   min-height: 8vh;
+    position: fixed;
+    display: flex;
+    height: 170px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 20vh;
+    background: #fff;
+    box-shadow:  0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.logo{
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color:  #E4484A;
+.nav-content{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav img {
+    width: 22%;
+    margin-top: 10px;
+    display: block;   
+}
+
+.nav-top{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+.nav-buttom{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    width: 100%;
+   
+    
+}
+.nav-buttom a{
+    margin-left: 30px;
+}
+
+.nav-buttom a:hover{
+    border-bottom: 2px solid #020D59;
 }
 
 .nav-links{
     display: flex;
-    justify-content: space-around;
-    width: 35%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nav-links li{
     list-style: none;
     display: flex;
     align-items: center;
+    margin-left: 20px;
 }
 
 .nav-links li i {
-    margin-right: 10px;
+    margin-right: 20px;
     color: black;
 }
 
@@ -46,11 +99,14 @@ a{
 }
 
 .nav-btn1{
-    background: #E4484A;
-    padding: 10px 30px;
-    border-radius: 4px;
+    background: #90AFD5;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
 }
+
 
 .nav-btn1:hover{
     background:#020D59;
@@ -58,29 +114,92 @@ a{
 }
 
 .nav-btn2{
-    background:#020D59;
-    padding: 10px 30px;
-    border-radius: 4px;
-    color: white;
+    border: 2px solid #90AFD5;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+
+.nav-btn2 a{
+    color: black;
 }
 
 .nav-btn2:hover{
-    background: #50cdfb;
+    background:#90AFD5;
     transition: 0.2s ease-out;
 }
 
-.nav-btn3{
-    background: none;
-    padding: 10px 30px;
-    border: 2px solid #020D59;
-    border-radius: 4px;
+
+.citat1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.citat1 h1{
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+
+.citat1 p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 65%;
+}
+
+.citat1 .images{
+    margin-top: 30px;  
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.images img {
+    width: 32%;
+}
+
+
+
+/*Footer*/
+
+footer{
+    background: #90AFD5;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    line-height: 1.5rem;
+}
+
+.footer-content{
+    margin-top: 30px;
+    display: flex;
     color: white;
-}
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+} 
 
-.nav-btn3:hover{
-    background: #50cdfb;
-    transition: 0.2s ease-out;
-}
+
+
+
+
+
+
 
 .burger{
     display: none;
@@ -95,23 +214,72 @@ a{
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%;
-    }
-}
 
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
     }
+
+    main{
+        margin: 0;
+        overflow: hidden;
+    }
+
+    nav img{
+        width: 60%;
+    }
     
+    .nav-top{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-top a{
+        margin-bottom: 0;
+    }
+    
+    .nav-buttom{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .nav-buttom a{
+        line-height: 90px;
+        font-size: 36px;
+        font-weight: 550;
+        margin-left: 0;
+    }
+
+    .nav-btn1{
+        background: #90AFD5;
+        padding: 13px 46px;
+        border-radius: 0px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-btn2{
+        border: 2px solid #90AFD5;
+        padding: 10px;
+        margin-top: 51px;
+        cursor: pointer;
+    }
+    
+    .nav-btn2 i{
+        margin-left: 12%;
+    }
+    
+    .nav-btn2 a{
+        color: black;
+    }
+
     .nav-links{
         position: absolute;
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: white;
+        background-color: #f3f3f3;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -122,27 +290,109 @@ a{
 
     .nav-links li{
         opacity: 0;
+        margin-left: 0;
+    }
+
+    .nav-content{
+        padding-left: 230px;
+        padding-right: 0;
     }
 
     .burger{
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
     }
 
-    .nav-btn1{
-        background: #E4484A;
-        padding: 10px 30px;
-        border-radius: 4px;
-        color: black;
+    .citat-img-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+
+    .images{
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    .footer-content{
+        margin: 50px;
+    
+
+    }
+
+    .modal-content{
+        width: 85%;
     }
     
-    .nav-btn1:hover{
-        background:#020D59;
-        transition: 0.2s ease-out;
+    
+   
+    
+    .citat1 h1{
+        font-size: 25px;
+        font-weight: 500;
+        width: 70%;
+        text-align: center;
     }
-}
+
+    
+    
+    .citat1 .images{
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    
+    .images img {
+        width: 100%;
+        margin-bottom: 15px;
+        
+    }
+
+    footer{
+        background: #90AFD5;
+        height: 300px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    footer p{
+        line-height: 1rem;
+        font-size: 12px;
+    }
+    
+    .footer-content{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 94%;
+        color: white;
+    } 
+    
+
+
+
 
 .nav-active{
-    transform:translateX(0%)
+    transform:translateX(0%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    padding-top: 26px;
+}
 }
 
 @keyframes navLinkFade{
