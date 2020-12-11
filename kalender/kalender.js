@@ -1,5 +1,5 @@
 // variablerne indeholder: måneder, år
-var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var months = ["Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"];
 var startYear = 2010;
 var endYear = 2021;
 var month = 0;
@@ -60,7 +60,7 @@ function loadCalendarDays() {
     var num = daysInMonth(month, year);
     var dayofweek = tmpDate.getDay(); // start kalenderdag
 
-    // opret kalenderdagen
+    //  dagene på ugen
     for (var i = 0; i <= dayofweek; i++) {
         var d = document.createElement("div");
         d.classList.add("day");
@@ -68,7 +68,7 @@ function loadCalendarDays() {
         document.getElementById("calendarDays").appendChild(d);
     }
 
-    // gengive resten af ​​dagene
+    //  datoerne
     for (var i = 0; i < num; i++) {
         var tmp = i + 1;
         var d = document.createElement("div");
@@ -76,6 +76,7 @@ function loadCalendarDays() {
         d.className = "day";
         d.innerHTML = tmp;
         d.dataset.day = tmp;
+
 
         // klik af event start
         d.addEventListener('click', function () {
@@ -88,7 +89,7 @@ function loadCalendarDays() {
                 selectedDays.splice(selectedDays.indexOf(this.dataset.day), 1);
 
             function dosomething() {
-                alert("Juleaften på Stoppestedet");
+                alert("Juleaften på Stoppestedet 2020");
             }
             dosomething();
         });
