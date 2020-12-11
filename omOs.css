@@ -17,7 +17,7 @@ margin: 100px;
 overflow: hidden;
 }
 
-/*nav*/
+/*-------------nav-----------------*/
 
 
 header{
@@ -132,7 +132,44 @@ a{
     transition: 0.2s ease-out;
 }
 
+.burger{
+display: none;
+cursor: pointer;
+}
 
+.burger div{
+width: 25px;
+height: 3px;
+background-color: black;
+margin: 5px;
+transition: all 0.3s ease;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-10px,10px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-8px,-8px);
+}
+
+
+/*------top centent-----------*/
 .om-os-content{
     display: flex;
     flex-direction: column;
@@ -198,7 +235,7 @@ a{
     line-height: 30px;
 }
 
-/*---FAQ section---*/
+/*------FAQ section-----*/
 .faq-container{
     display: flex;
     flex-direction: column;
@@ -207,7 +244,7 @@ a{
 
 
 
-/*Footer*/
+/*--------Footer----------------*/
 
 footer{
     background: #90AFD5;
@@ -234,21 +271,8 @@ footer p{
 } 
 
 
-.burger{
-display: none;
-cursor: pointer;
-}
 
-.burger div{
-width: 25px;
-height: 3px;
-background-color: black;
-margin: 5px;
-transition: all 0.3s ease;
-}
-
-
-
+/*----responsiveness-----*/
 
 @media screen and (max-width:768px){
 body{
@@ -260,6 +284,10 @@ nav img{
 main{
     margin: 0;
     overflow: hidden;
+}
+
+nav img {
+    width: 60%;
 }
 
 .nav-top{
@@ -348,16 +376,21 @@ main{
     
 }
 
-
-
-
 .modal-content{
     width: 85%;
 }
 
     h1{
     font-size: 23px;
-    width: 92%;
+}
+
+.txt-and-img{
+    flex-direction: column;
+}
+
+.txt-box {
+ width: 100%;
+ margin-right: 0;
 }
 
 }
@@ -376,63 +409,5 @@ main{
     flex-direction: column;
     }
 }
-@media screen and (max-width:768px){
-   .txt-and-img{
-       flex-direction: column;
-   }
-
-   .txt-box {
-    width: 100%;
-    margin-right: 0;
-   }
-
-   nav img {
-    width: 60%;
-}
-   
-}
 
 
-
-
-@media screen and (max-width:480px){
-    main{ 
-        margin:0;
-    }
-
-    footer{
-        height: fit-content;
-    }
-
-    .footer-content{
-        flex-direction: column;
-        align-items: f;
-    }
-
-    .phonetime{
-        margin-top: 20px;
-    }
-}
-
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-10px,10px);
-}
-
-.toggle .line2{
-    opacity: 0;
-}
-
-.toggle .line3{
-    transform: rotate(45deg) translate(-8px,-8px);
-}

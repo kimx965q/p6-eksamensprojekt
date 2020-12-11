@@ -31,8 +31,8 @@ body{
 }
 @media screen and (max-width:768px){
     .button {
-        top: 32%;
-        left: 83%;
+        top: 24%;
+        left: 84%;
     }
     .modal-content{
         width: 85%;
