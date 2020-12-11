@@ -10,14 +10,18 @@
     height: auto;
     background: lightgrey;
     border-radius: 5px;
+<<<<<<< HEAD
+    font-family: Arial, Helvetica, sans-serif;
+=======
     z-index: -1;
     margin-bottom: 40px;
+>>>>>>> 718bfdfc8c6116c5eaf2e8be50496fdf888d8f2c
 }
 .label{
     padding: 20px 130px;
-    font-size: 35px;
-    font-weight: bold;
-    color: yellow;
+    text-align: center;
+    font-size: 36px;
+    color:#000000;
 }
 
 .login_form{
@@ -25,7 +29,7 @@
 }
 
 .login_form .font{
-    font-size: 18px;
+    font-size: 15px;
     color: black;
     margin: 5px 0;
 }
@@ -48,18 +52,18 @@
     height: 45px;
     width: 365px;
     font-size: 20px;
-    color: red;
+    color: #000000;
     outline: none;
     cursor: pointer;
     font-weight: bold;
-    background: green;
+    background: #90AFD5;
     border-radius: 3px;
-    border: 1px solid red;
+    border: 1px solid silver;
     
 }
 
 .login_form button:hover{
-    background: blue;
+    background: #3655A0;
 }
 
 .login_form #email_error,
@@ -67,11 +71,11 @@
     margin-top: 5px;
     width: 345px;
     font-size: 18px;
-    color: red;
-    background: green;
+    color: #000000;
+    background: #3655A0;
     text-align: center;
     padding: 5px 8px;
     border-radius: 3px;
-    border: 1px solid red;
+    border: 1px solid #DE1F22;
     display: none;
 }
