@@ -5,20 +5,15 @@
 
 .container{
     position: relative;
-    margin-top: 100px;
-    width: 450px;
+    margin-top: 50px;
+    width: 555px;
     height: auto;
     background: lightgrey;
     border-radius: 5px;
-<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;
-=======
-    z-index: -1;
-    margin-bottom: 40px;
->>>>>>> 718bfdfc8c6116c5eaf2e8be50496fdf888d8f2c
 }
 .label{
-    padding: 20px 130px;
+    padding: 20px 80px;
     text-align: center;
     font-size: 36px;
     color:#000000;
@@ -26,6 +21,7 @@
 
 .login_form{
     padding: 20px 40px;
+    
 }
 
 .login_form .font{
@@ -36,7 +32,7 @@
 
 .login_form input{
     height: 40px;
-    width: 350px;
+    width: 100%;
     padding: 0 5px;
     font-size: 18px;
     outline: none;
