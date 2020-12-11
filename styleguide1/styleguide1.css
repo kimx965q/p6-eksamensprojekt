@@ -68,17 +68,18 @@ main{
 
 .hex-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .row-1{
   
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .p1 li{
@@ -112,7 +113,7 @@ main{
 .row-2{
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #box-4{
@@ -136,6 +137,7 @@ main{
 
 .row-3{
     margin-top: 20px;
+    margin-left: 160px;
    
 }
 
@@ -171,6 +173,7 @@ main{
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .content-top{
@@ -306,13 +309,11 @@ main{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .new-logo{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     margin-top: 30px;
 }
 
@@ -370,11 +371,12 @@ main{
 .container4-part2{
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 175px;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+
 
 .container4-part2 h4{
     font-size: 20px;
@@ -694,13 +696,19 @@ a{
     font-size: 40px;
     color: #E4484A;
 }
+.container8{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 /* Slideshow container */
 .slideshow-container {
     max-width: 100%;
     position: relative;
     margin: auto;
-    width: 900px; /* Midlertidig container settings forud for hjemmesidens CSS */
+    width: 100%; /* Midlertidig container settings forud for hjemmesidens CSS */
     text-align: center; /* Midlertidig container settings forud for hjemmesidens CSS */
     margin-top: 50px;
 }
@@ -816,6 +824,8 @@ der varierer på billederne, når man bladrer */
 
 
 
+
+
 .p9{
     background: white;
     width: 100%;
@@ -834,3 +844,183 @@ der varierer på billederne, når man bladrer */
     margin-bottom: 50px;
 }
 
+.calendar
+{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    margin-top: 50px;
+}
+
+.calendar .dropdown
+{
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    background-color: #fff;
+    color: #0F204B;
+    text-align: left;
+    font-size: 14pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 160px;
+    left: 0px;
+    z-index: 2000;
+}
+
+.calendar .dropdown .dropdown-item
+{
+    cursor:pointer;
+    opacity: .7;
+    transition: .5s opacity;
+}
+
+.calendar .dropdown .dropdown-item:hover
+{
+    opacity: 1;
+}
+
+.calendar .years
+{
+    display:none;
+}
+
+.calendar .title
+{
+    text-align:center;
+    font-size:20pt;
+}
+
+.calendar .calendar-btn
+{
+    float: left;
+    background-color: #90AFD5;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    width: 20%;
+    cursor: pointer;
+    transition: .5s background-color;
+}
+
+.calendar .calendar-btn:hover{
+    background-color:#0F204B;
+}
+
+.calendar .year-btn
+{
+    float:right;
+}
+
+.calendar .calendar-dates .days .day
+{
+    float:left;
+    width: 12%;
+    margin: 1%;
+    padding: 1%;
+    font-size:13pt;
+    text-align:center;
+    border: solid 1px #ddd;
+}
+
+.calendar .calendar-dates .days .day.blank
+{
+    background-color: white;
+    border:none;
+}
+
+.calendar .calendar-dates .days .day.selected
+{
+    background-color: #90AFD5;
+    color: white;
+    cursor:pointer;
+    opacity: .5;
+    transition: .5s opacity;
+}
+
+.calendar .calendar-dates .days .day.selected:hover
+{
+    opacity: 1;
+}
+
+.calendar .calendar-dates .days .day.label
+{
+    height: 40px;
+    background-color: white;
+    color: black;
+    border:none;
+    font-weight:bold;
+}
+
+.clear{
+    clear:both;
+}
+
+@media only screen and (max-width: 960px) {
+    .calendar{
+        width: 100%;
+        margin: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        position: relative;
+        left: 0px;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .calendar{
+        z-index: -1;
+        margin-top: 50px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px){
+    body{
+        margin-left: 350px;
+        margin-right: 100px;
+    }
+
+    .hex-content{
+    margin-left: 100px;
+    margin-right: 100px;
+    }
+
+    .typo-content{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .container3{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .container3 img {
+        width: 64%;
+    }
+
+    .foto {
+        width: 85%;
+        height: auto;
+    }
+
+    .text { 
+        color: #000;
+        font-size: 11px;
+    }
+
+    .default-knap3 img{
+        width: 80%
+    }
+    .hover-knap3 img{
+        width: 80%
+    }
+}
