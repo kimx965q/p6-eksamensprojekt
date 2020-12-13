@@ -245,6 +245,10 @@ transition: all 0.3s ease;
     align-items: center;
 }
 
+.faq-container h1{
+    color: #020D59;
+    font-size: 36px;
+}
 
 
 /*--------Footer----------------*/
