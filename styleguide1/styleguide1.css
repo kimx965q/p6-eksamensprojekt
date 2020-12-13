@@ -297,7 +297,7 @@ main{
 .p3 h3{
     color: #858585;
     font-size: 25px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .container3 h4{
@@ -336,7 +336,7 @@ main{
 .p4 h3{
     color: #858585;
     font-size: 25px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 .container4{
     display: flex;
