@@ -8,6 +8,15 @@ h1{
     text-align: center;
 }
 
+h3{
+    font-size: 24px;
+}
+
+.tilbud-content1 h1{
+    font-size: 46px;
+    width: 90%;
+}
+
 /*content1---start*/
 
 
@@ -23,9 +32,7 @@ h1{
     padding: 58px;   
 }
 
-.txt-box1 p{
-    width: 90%;
-}
+
 
 .tilbud-img1 img{
     width: 100%;
@@ -168,6 +175,3 @@ h1{
     }
 
 
-@media screen and (max-width:480px){
-    
-    }

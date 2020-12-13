@@ -211,8 +211,9 @@ transition: all 0.3s ease;
     margin-top: 30px;
 }
 
-.personale-container h1{
+.personale-container h2{
     color: #020D59;
+    font-size: 36px;
 }
 
 .row1{
@@ -383,7 +384,8 @@ nav img {
 }
 
     h1{
-    font-size: 23px;
+    font-size: 32px;
+    margin-top: 50px;
 }
 
 .txt-and-img{
@@ -406,10 +408,7 @@ nav img {
     .txt-box{
         width: 100%;
     }
-    .row1, .row2{
-    align-items: center;
-    flex-direction: column;
-    }
+    
 }
 
 
@@ -422,4 +421,15 @@ nav img {
         width: 350px;
     }
     
+}
+
+@media (max-width:768px){
+    .row1, .row2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt-box {
+        width: 100%;
+    }
 }
