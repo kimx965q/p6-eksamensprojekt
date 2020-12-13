@@ -57,7 +57,7 @@ body, *{
 {
     float: left;
     background-color: #90AFD5;
-    color: white;
+    color: #fff;
     text-align: center;
     font-size: 14pt;
     padding-top: 5px;
@@ -111,7 +111,7 @@ body, *{
 .calendar .calendar-dates .days .day.label
 {
     height: 40px;
-    background-color: white;
+    background-color: #fff;
     color: black;
     border:none;
     font-weight:bold;
