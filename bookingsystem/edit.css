@@ -8,7 +8,7 @@
     margin-top: 50px;
     width: 555px;
     height: auto;
-    background: lightgrey;
+    border: 2px solid #3655A0;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -58,7 +58,7 @@
     height: 45px;
     width: 250px;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     outline: none;
     cursor: pointer;
     font-weight: bold;
@@ -78,7 +78,7 @@
     width: 345px;
     font-size: 18px;
     color: #000000;
-    background: #3655A0;
+    background: #ffffff;
     text-align: center;
     padding: 5px 8px;
     border-radius: 3px;

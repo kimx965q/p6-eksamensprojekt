@@ -18,23 +18,24 @@
     padding: 20px;
     width: 100%;
     cursor: pointer;
-    background-color: grey;
-    color: darkgreen;
+    background-color: #90AFD5;
+    color: #ffffff;
     transition: 0.4s;
+    font-size: 18px;
 }
 
 .question:hover {
-    background-color: olivedrab;
+    background-color: #020D59;
 }
 
 .active {
-    background-color: darkgray;
+    background-color: #3655A0;
 }
 
 /* Style til svar. Skjul svarene som standard. */
 .answer {
     padding: 20px 40px;
-    background-color: lightgray;
+    background-color:#ffffff;
     display: none;
     overflow: hidden;
     max-height: 0;

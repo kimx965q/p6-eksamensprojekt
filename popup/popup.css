@@ -11,14 +11,15 @@ body{
 }
 
 .button{
-    background: #E3E4E5;
+    
     padding: 15px 20px;
-    color: #020D59;
-    border: none;
+    color: black;
+    border: 2px solid #90AFD5;
     position: fixed;
     top: 22%;
     left: 93%;
     font-size: 18px;
+    background: #ffffff;
 }
 
 @media screen and (max-width:1200px){
@@ -49,7 +50,7 @@ body{
 }
 
 .button:hover{
-    background: #333;
+    background:  #90AFD5;
 }
 
 .modal{
