@@ -28,9 +28,3 @@ for (i = 0; i < q.length; i++) {
   }
 
   // SLUT FAQ accordion kode
-
-
-  // START search bar kode
-  
-
-  // SLUT search bar kode
